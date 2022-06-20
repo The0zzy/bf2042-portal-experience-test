@@ -589,7 +589,7 @@
       </block>
     </statement>
   </block>
-  <block type="SetVariableAtIndex" deletable="false" movable="false" editable="false" x="809" y="271"></block>
+  <block type="SetVariableAtIndex" deletable="false" movable="false" editable="false" x="808" y="171"></block>
   <block type="ruleBlock" deletable="false" movable="false" editable="false" x="1760" y="1436">
     <mutation isOnGoingEvent="true"></mutation>
     <field name="NAME">New Rule</field>
