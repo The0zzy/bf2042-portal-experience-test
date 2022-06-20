@@ -11,37 +11,37 @@
     <variable type="Global" id="#7zq+R,(tHTMA@wg3!5o">initialized</variable>
     <variable type="Global" id="=7h#O(Lvo~vrw6sd,q[Z">pointA</variable>
   </variables>
-  <block type="modBlock" deletable="false" x="0" y="0">
+  <block type="modBlock" deletable="false" movable="false" editable="false" x="0" y="0">
     <statement name="RULES">
-      <block type="ruleBlock">
+      <block type="ruleBlock" deletable="false" movable="false" editable="false">
         <mutation isOnGoingEvent="false"></mutation>
         <field name="NAME">New Rule</field>
         <field name="EVENTTYPE">OnGameModeStarted</field>
         <statement name="ACTIONS">
-          <block type="SetVariable">
+          <block type="SetVariable" deletable="false" movable="false" editable="false">
             <value name="VALUE-0">
-              <block type="variableReferenceBlock">
+              <block type="variableReferenceBlock" deletable="false" movable="false" editable="false">
                 <mutation isObjectVar="false"></mutation>
                 <field name="OBJECTTYPE">Global</field>
                 <field name="VAR" id="#7zq+R,(tHTMA@wg3!5o" variabletype="Global">initialized</field>
               </block>
             </value>
             <value name="VALUE-1">
-              <block type="Boolean">
+              <block type="Boolean" deletable="false" movable="false" editable="false">
                 <field name="BOOL">TRUE</field>
               </block>
             </value>
             <next>
-              <block type="SetVariable">
+              <block type="SetVariable" deletable="false" movable="false" editable="false">
                 <value name="VALUE-0">
-                  <block type="variableReferenceBlock">
+                  <block type="variableReferenceBlock" deletable="false" movable="false" editable="false">
                     <mutation isObjectVar="false"></mutation>
                     <field name="OBJECTTYPE">Global</field>
                     <field name="VAR" id="gXokqt+jjLJSsiQsj^$$" variabletype="Global">ongoingCounter</field>
                   </block>
                 </value>
                 <value name="VALUE-1">
-                  <block type="Number">
+                  <block type="Number" deletable="false" movable="false" editable="false">
                     <field name="NUM">2</field>
                   </block>
                 </value>
@@ -50,17 +50,17 @@
           </block>
         </statement>
         <next>
-          <block type="ruleBlock">
+          <block type="ruleBlock" deletable="false" movable="false" editable="false">
             <mutation isOnGoingEvent="true"></mutation>
             <field name="NAME">New Rule</field>
             <field name="EVENTTYPE">Ongoing</field>
             <field name="OBJECTTYPE">Player</field>
             <statement name="CONDITIONS">
-              <block type="conditionBlock">
+              <block type="conditionBlock" deletable="false" movable="false" editable="false">
                 <value name="CONDITION">
-                  <block type="GetVariable">
+                  <block type="GetVariable" deletable="false" movable="false" editable="false">
                     <value name="VALUE-0">
-                      <block type="variableReferenceBlock">
+                      <block type="variableReferenceBlock" deletable="false" movable="false" editable="false">
                         <mutation isObjectVar="false"></mutation>
                         <field name="OBJECTTYPE">Global</field>
                         <field name="VAR" id="#7zq+R,(tHTMA@wg3!5o" variabletype="Global">initialized</field>
@@ -69,23 +69,23 @@
                   </block>
                 </value>
                 <next>
-                  <block type="conditionBlock">
+                  <block type="conditionBlock" deletable="false" movable="false" editable="false">
                     <value name="CONDITION">
-                      <block type="Equals">
+                      <block type="Equals" deletable="false" movable="false" editable="false">
                         <value name="VALUE-0">
-                          <block type="Modulo">
+                          <block type="Modulo" deletable="false" movable="false" editable="false">
                             <value name="VALUE-0">
-                              <block type="GetMatchTimeElapsed"></block>
+                              <block type="GetMatchTimeElapsed" deletable="false" movable="false" editable="false"></block>
                             </value>
                             <value name="VALUE-1">
-                              <block type="Number">
+                              <block type="Number" deletable="false" movable="false" editable="false">
                                 <field name="NUM">2</field>
                               </block>
                             </value>
                           </block>
                         </value>
                         <value name="VALUE-1">
-                          <block type="Number">
+                          <block type="Number" deletable="false" movable="false" editable="false">
                             <field name="NUM">0</field>
                           </block>
                         </value>
@@ -96,22 +96,22 @@
               </block>
             </statement>
             <statement name="ACTIONS">
-              <block type="subroutineInstanceBlock">
+              <block type="subroutineInstanceBlock" deletable="false" movable="false" editable="false">
                 <field name="SUBROUTINE_NAME">debug1</field>
               </block>
             </statement>
             <next>
-              <block type="ruleBlock">
+              <block type="ruleBlock" deletable="false" movable="false" editable="false">
                 <mutation isOnGoingEvent="true"></mutation>
                 <field name="NAME">New Rule</field>
                 <field name="EVENTTYPE">Ongoing</field>
                 <field name="OBJECTTYPE">Player</field>
                 <statement name="CONDITIONS">
-                  <block type="conditionBlock">
+                  <block type="conditionBlock" deletable="false" movable="false" editable="false">
                     <value name="CONDITION">
-                      <block type="GetVariable">
+                      <block type="GetVariable" deletable="false" movable="false" editable="false">
                         <value name="VALUE-0">
-                          <block type="variableReferenceBlock">
+                          <block type="variableReferenceBlock" deletable="false" movable="false" editable="false">
                             <mutation isObjectVar="false"></mutation>
                             <field name="OBJECTTYPE">Global</field>
                             <field name="VAR" id="#7zq+R,(tHTMA@wg3!5o" variabletype="Global">initialized</field>
@@ -120,25 +120,25 @@
                       </block>
                     </value>
                     <next>
-                      <block type="conditionBlock">
+                      <block type="conditionBlock" deletable="false" movable="false" editable="false">
                         <value name="CONDITION">
-                          <block type="Not">
+                          <block type="Not" deletable="false" movable="false" editable="false">
                             <value name="VALUE-0">
-                              <block type="Equals">
+                              <block type="Equals" deletable="false" movable="false" editable="false">
                                 <value name="VALUE-0">
-                                  <block type="Modulo">
+                                  <block type="Modulo" deletable="false" movable="false" editable="false">
                                     <value name="VALUE-0">
-                                      <block type="GetMatchTimeElapsed"></block>
+                                      <block type="GetMatchTimeElapsed" deletable="false" movable="false" editable="false"></block>
                                     </value>
                                     <value name="VALUE-1">
-                                      <block type="Number">
+                                      <block type="Number" deletable="false" movable="false" editable="false">
                                         <field name="NUM">2</field>
                                       </block>
                                     </value>
                                   </block>
                                 </value>
                                 <value name="VALUE-1">
-                                  <block type="Number">
+                                  <block type="Number" deletable="false" movable="false" editable="false">
                                     <field name="NUM">0</field>
                                   </block>
                                 </value>
@@ -151,25 +151,25 @@
                   </block>
                 </statement>
                 <statement name="ACTIONS">
-                  <block type="subroutineInstanceBlock">
+                  <block type="subroutineInstanceBlock" deletable="false" movable="false" editable="false">
                     <field name="SUBROUTINE_NAME">debug1</field>
                   </block>
                 </statement>
                 <next>
-                  <block type="ruleBlock">
+                  <block type="ruleBlock" deletable="false" movable="false" editable="false">
                     <mutation isOnGoingEvent="true"></mutation>
                     <field name="NAME">New Rule</field>
                     <field name="EVENTTYPE">Ongoing</field>
                     <field name="OBJECTTYPE">Player</field>
                     <statement name="CONDITIONS">
-                      <block type="conditionBlock">
+                      <block type="conditionBlock" deletable="false" movable="false" editable="false">
                         <value name="CONDITION">
-                          <block type="GetSoldierState">
+                          <block type="GetSoldierState" deletable="false" movable="false" editable="false">
                             <value name="VALUE-0">
-                              <block type="EventPlayer"></block>
+                              <block type="EventPlayer" deletable="false" movable="false" editable="false"></block>
                             </value>
                             <value name="VALUE-1">
-                              <block type="SoldierStateBoolItem">
+                              <block type="SoldierStateBoolItem" deletable="false" movable="false" editable="false">
                                 <field name="VALUE-0">SoldierStateBool</field>
                                 <field name="VALUE-1">IsAlive</field>
                               </block>
@@ -177,14 +177,14 @@
                           </block>
                         </value>
                         <next>
-                          <block type="conditionBlock">
+                          <block type="conditionBlock" deletable="false" movable="false" editable="false">
                             <value name="CONDITION">
-                              <block type="GetSoldierState">
+                              <block type="GetSoldierState" deletable="false" movable="false" editable="false">
                                 <value name="VALUE-0">
-                                  <block type="EventPlayer"></block>
+                                  <block type="EventPlayer" deletable="false" movable="false" editable="false"></block>
                                 </value>
                                 <value name="VALUE-1">
-                                  <block type="SoldierStateBoolItem">
+                                  <block type="SoldierStateBoolItem" deletable="false" movable="false" editable="false">
                                     <field name="VALUE-0">SoldierStateBool</field>
                                     <field name="VALUE-1">IsAISoldier</field>
                                   </block>
@@ -192,27 +192,27 @@
                               </block>
                             </value>
                             <next>
-                              <block type="conditionBlock">
+                              <block type="conditionBlock" deletable="false" movable="false" editable="false">
                                 <value name="CONDITION">
-                                  <block type="GreaterThan">
+                                  <block type="GreaterThan" deletable="false" movable="false" editable="false">
                                     <value name="VALUE-0">
-                                      <block type="CountOf">
+                                      <block type="CountOf" deletable="false" movable="false" editable="false">
                                         <value name="VALUE-0">
-                                          <block type="FilteredArray">
+                                          <block type="FilteredArray" deletable="false" movable="false" editable="false">
                                             <value name="VALUE-0">
-                                              <block type="AllPlayers"></block>
+                                              <block type="AllPlayers" deletable="false" movable="false" editable="false"></block>
                                             </value>
                                             <value name="VALUE-1">
-                                              <block type="And">
+                                              <block type="And" deletable="false" movable="false" editable="false">
                                                 <value name="VALUE-0">
-                                                  <block type="Not">
+                                                  <block type="Not" deletable="false" movable="false" editable="false">
                                                     <value name="VALUE-0">
-                                                      <block type="GetSoldierState">
+                                                      <block type="GetSoldierState" deletable="false" movable="false" editable="false">
                                                         <value name="VALUE-0">
-                                                          <block type="CurrentArrayElement"></block>
+                                                          <block type="CurrentArrayElement" deletable="false" movable="false" editable="false"></block>
                                                         </value>
                                                         <value name="VALUE-1">
-                                                          <block type="SoldierStateBoolItem">
+                                                          <block type="SoldierStateBoolItem" deletable="false" movable="false" editable="false">
                                                             <field name="VALUE-0">SoldierStateBool</field>
                                                             <field name="VALUE-1">IsAISoldier</field>
                                                           </block>
@@ -222,12 +222,12 @@
                                                   </block>
                                                 </value>
                                                 <value name="VALUE-1">
-                                                  <block type="GetSoldierState">
+                                                  <block type="GetSoldierState" deletable="false" movable="false" editable="false">
                                                     <value name="VALUE-0">
-                                                      <block type="CurrentArrayElement"></block>
+                                                      <block type="CurrentArrayElement" deletable="false" movable="false" editable="false"></block>
                                                     </value>
                                                     <value name="VALUE-1">
-                                                      <block type="SoldierStateBoolItem">
+                                                      <block type="SoldierStateBoolItem" deletable="false" movable="false" editable="false">
                                                         <field name="VALUE-0">SoldierStateBool</field>
                                                         <field name="VALUE-1">IsAlive</field>
                                                       </block>
@@ -241,43 +241,43 @@
                                       </block>
                                     </value>
                                     <value name="VALUE-1">
-                                      <block type="Number">
+                                      <block type="Number" deletable="false" movable="false" editable="false">
                                         <field name="NUM">0</field>
                                       </block>
                                     </value>
                                   </block>
                                 </value>
                                 <next>
-                                  <block type="conditionBlock">
+                                  <block type="conditionBlock" deletable="false" movable="false" editable="false">
                                     <value name="CONDITION">
-                                      <block type="GreaterThan">
+                                      <block type="GreaterThan" deletable="false" movable="false" editable="false">
                                         <value name="VALUE-0">
-                                          <block type="DistanceBetween">
+                                          <block type="DistanceBetween" deletable="false" movable="false" editable="false">
                                             <value name="VALUE-0">
-                                              <block type="Add">
+                                              <block type="Add" deletable="false" movable="false" editable="false">
                                                 <value name="VALUE-0">
-                                                  <block type="Multiply">
+                                                  <block type="Multiply" deletable="false" movable="false" editable="false">
                                                     <value name="VALUE-0">
-                                                      <block type="WorldVectorOf">
+                                                      <block type="WorldVectorOf" deletable="false" movable="false" editable="false">
                                                         <value name="VALUE-0">
-                                                          <block type="ForwardVector"></block>
+                                                          <block type="ForwardVector" deletable="false" movable="false" editable="false"></block>
                                                         </value>
                                                         <value name="VALUE-1">
-                                                          <block type="FirstOf">
+                                                          <block type="FirstOf" deletable="false" movable="false" editable="false">
                                                             <value name="VALUE-0">
-                                                              <block type="FilteredArray">
+                                                              <block type="FilteredArray" deletable="false" movable="false" editable="false">
                                                                 <value name="VALUE-0">
-                                                                  <block type="AllPlayers"></block>
+                                                                  <block type="AllPlayers" deletable="false" movable="false" editable="false"></block>
                                                                 </value>
                                                                 <value name="VALUE-1">
-                                                                  <block type="Not">
+                                                                  <block type="Not" deletable="false" movable="false" editable="false">
                                                                     <value name="VALUE-0">
-                                                                      <block type="GetSoldierState">
+                                                                      <block type="GetSoldierState" deletable="false" movable="false" editable="false">
                                                                         <value name="VALUE-0">
-                                                                          <block type="CurrentArrayElement"></block>
+                                                                          <block type="CurrentArrayElement" deletable="false" movable="false" editable="false"></block>
                                                                         </value>
                                                                         <value name="VALUE-1">
-                                                                          <block type="SoldierStateBoolItem">
+                                                                          <block type="SoldierStateBoolItem" deletable="false" movable="false" editable="false">
                                                                             <field name="VALUE-0">SoldierStateBool</field>
                                                                             <field name="VALUE-1">IsAISoldier</field>
                                                                           </block>
@@ -293,30 +293,30 @@
                                                       </block>
                                                     </value>
                                                     <value name="VALUE-1">
-                                                      <block type="Number">
+                                                      <block type="Number" deletable="false" movable="false" editable="false">
                                                         <field name="NUM">5</field>
                                                       </block>
                                                     </value>
                                                   </block>
                                                 </value>
                                                 <value name="VALUE-1">
-                                                  <block type="GetSoldierState">
+                                                  <block type="GetSoldierState" deletable="false" movable="false" editable="false">
                                                     <value name="VALUE-0">
-                                                      <block type="FirstOf">
+                                                      <block type="FirstOf" deletable="false" movable="false" editable="false">
                                                         <value name="VALUE-0">
-                                                          <block type="FilteredArray">
+                                                          <block type="FilteredArray" deletable="false" movable="false" editable="false">
                                                             <value name="VALUE-0">
-                                                              <block type="AllPlayers"></block>
+                                                              <block type="AllPlayers" deletable="false" movable="false" editable="false"></block>
                                                             </value>
                                                             <value name="VALUE-1">
-                                                              <block type="Not">
+                                                              <block type="Not" deletable="false" movable="false" editable="false">
                                                                 <value name="VALUE-0">
-                                                                  <block type="GetSoldierState">
+                                                                  <block type="GetSoldierState" deletable="false" movable="false" editable="false">
                                                                     <value name="VALUE-0">
-                                                                      <block type="CurrentArrayElement"></block>
+                                                                      <block type="CurrentArrayElement" deletable="false" movable="false" editable="false"></block>
                                                                     </value>
                                                                     <value name="VALUE-1">
-                                                                      <block type="SoldierStateBoolItem">
+                                                                      <block type="SoldierStateBoolItem" deletable="false" movable="false" editable="false">
                                                                         <field name="VALUE-0">SoldierStateBool</field>
                                                                         <field name="VALUE-1">IsAISoldier</field>
                                                                       </block>
@@ -330,7 +330,7 @@
                                                       </block>
                                                     </value>
                                                     <value name="VALUE-1">
-                                                      <block type="SoldierStateVectorItem">
+                                                      <block type="SoldierStateVectorItem" deletable="false" movable="false" editable="false">
                                                         <field name="VALUE-0">SoldierStateVector</field>
                                                         <field name="VALUE-1">GetPosition</field>
                                                       </block>
@@ -340,12 +340,12 @@
                                               </block>
                                             </value>
                                             <value name="VALUE-1">
-                                              <block type="GetSoldierState">
+                                              <block type="GetSoldierState" deletable="false" movable="false" editable="false">
                                                 <value name="VALUE-0">
-                                                  <block type="EventPlayer"></block>
+                                                  <block type="EventPlayer" deletable="false" movable="false" editable="false"></block>
                                                 </value>
                                                 <value name="VALUE-1">
-                                                  <block type="SoldierStateVectorItem">
+                                                  <block type="SoldierStateVectorItem" deletable="false" movable="false" editable="false">
                                                     <field name="VALUE-0">SoldierStateVector</field>
                                                     <field name="VALUE-1">GetPosition</field>
                                                   </block>
@@ -355,7 +355,7 @@
                                           </block>
                                         </value>
                                         <value name="VALUE-1">
-                                          <block type="Number">
+                                          <block type="Number" deletable="false" movable="false" editable="false">
                                             <field name="NUM">1</field>
                                           </block>
                                         </value>
@@ -370,45 +370,45 @@
                       </block>
                     </statement>
                     <statement name="ACTIONS">
-                      <block type="SpotTarget">
+                      <block type="SpotTarget" deletable="false" movable="false" editable="false">
                         <value name="VALUE-0">
-                          <block type="EventPlayer"></block>
+                          <block type="EventPlayer" deletable="false" movable="false" editable="false"></block>
                         </value>
                         <value name="VALUE-1">
-                          <block type="Number">
+                          <block type="Number" deletable="false" movable="false" editable="false">
                             <field name="NUM">30</field>
                           </block>
                         </value>
                         <next>
-                          <block type="Teleport">
+                          <block type="Teleport" deletable="false" movable="false" editable="false">
                             <value name="VALUE-0">
-                              <block type="EventPlayer"></block>
+                              <block type="EventPlayer" deletable="false" movable="false" editable="false"></block>
                             </value>
                             <value name="VALUE-1">
-                              <block type="Add">
+                              <block type="Add" deletable="false" movable="false" editable="false">
                                 <value name="VALUE-0">
-                                  <block type="Multiply">
+                                  <block type="Multiply" deletable="false" movable="false" editable="false">
                                     <value name="VALUE-0">
-                                      <block type="WorldVectorOf">
+                                      <block type="WorldVectorOf" deletable="false" movable="false" editable="false">
                                         <value name="VALUE-0">
-                                          <block type="ForwardVector"></block>
+                                          <block type="ForwardVector" deletable="false" movable="false" editable="false"></block>
                                         </value>
                                         <value name="VALUE-1">
-                                          <block type="FirstOf">
+                                          <block type="FirstOf" deletable="false" movable="false" editable="false">
                                             <value name="VALUE-0">
-                                              <block type="FilteredArray">
+                                              <block type="FilteredArray" deletable="false" movable="false" editable="false">
                                                 <value name="VALUE-0">
-                                                  <block type="AllPlayers"></block>
+                                                  <block type="AllPlayers" deletable="false" movable="false" editable="false"></block>
                                                 </value>
                                                 <value name="VALUE-1">
-                                                  <block type="Not">
+                                                  <block type="Not" deletable="false" movable="false" editable="false">
                                                     <value name="VALUE-0">
-                                                      <block type="GetSoldierState">
+                                                      <block type="GetSoldierState" deletable="false" movable="false" editable="false">
                                                         <value name="VALUE-0">
-                                                          <block type="CurrentArrayElement"></block>
+                                                          <block type="CurrentArrayElement" deletable="false" movable="false" editable="false"></block>
                                                         </value>
                                                         <value name="VALUE-1">
-                                                          <block type="SoldierStateBoolItem">
+                                                          <block type="SoldierStateBoolItem" deletable="false" movable="false" editable="false">
                                                             <field name="VALUE-0">SoldierStateBool</field>
                                                             <field name="VALUE-1">IsAISoldier</field>
                                                           </block>
@@ -424,30 +424,30 @@
                                       </block>
                                     </value>
                                     <value name="VALUE-1">
-                                      <block type="Number">
+                                      <block type="Number" deletable="false" movable="false" editable="false">
                                         <field name="NUM">5</field>
                                       </block>
                                     </value>
                                   </block>
                                 </value>
                                 <value name="VALUE-1">
-                                  <block type="GetSoldierState">
+                                  <block type="GetSoldierState" deletable="false" movable="false" editable="false">
                                     <value name="VALUE-0">
-                                      <block type="FirstOf">
+                                      <block type="FirstOf" deletable="false" movable="false" editable="false">
                                         <value name="VALUE-0">
-                                          <block type="FilteredArray">
+                                          <block type="FilteredArray" deletable="false" movable="false" editable="false">
                                             <value name="VALUE-0">
-                                              <block type="AllPlayers"></block>
+                                              <block type="AllPlayers" deletable="false" movable="false" editable="false"></block>
                                             </value>
                                             <value name="VALUE-1">
-                                              <block type="Not">
+                                              <block type="Not" deletable="false" movable="false" editable="false">
                                                 <value name="VALUE-0">
-                                                  <block type="GetSoldierState">
+                                                  <block type="GetSoldierState" deletable="false" movable="false" editable="false">
                                                     <value name="VALUE-0">
-                                                      <block type="CurrentArrayElement"></block>
+                                                      <block type="CurrentArrayElement" deletable="false" movable="false" editable="false"></block>
                                                     </value>
                                                     <value name="VALUE-1">
-                                                      <block type="SoldierStateBoolItem">
+                                                      <block type="SoldierStateBoolItem" deletable="false" movable="false" editable="false">
                                                         <field name="VALUE-0">SoldierStateBool</field>
                                                         <field name="VALUE-1">IsAISoldier</field>
                                                       </block>
@@ -461,7 +461,7 @@
                                       </block>
                                     </value>
                                     <value name="VALUE-1">
-                                      <block type="SoldierStateVectorItem">
+                                      <block type="SoldierStateVectorItem" deletable="false" movable="false" editable="false">
                                         <field name="VALUE-0">SoldierStateVector</field>
                                         <field name="VALUE-1">GetPosition</field>
                                       </block>
@@ -471,7 +471,7 @@
                               </block>
                             </value>
                             <value name="VALUE-2">
-                              <block type="Number">
+                              <block type="Number" deletable="false" movable="false" editable="false">
                                 <field name="NUM">0</field>
                               </block>
                             </value>
@@ -480,20 +480,20 @@
                       </block>
                     </statement>
                     <next>
-                      <block type="ruleBlock">
+                      <block type="ruleBlock" deletable="false" movable="false" editable="false">
                         <mutation isOnGoingEvent="true"></mutation>
                         <field name="NAME">New Rule</field>
                         <field name="EVENTTYPE">Ongoing</field>
                         <field name="OBJECTTYPE">Player</field>
                         <statement name="CONDITIONS">
-                          <block type="conditionBlock">
+                          <block type="conditionBlock" deletable="false" movable="false" editable="false">
                             <value name="CONDITION">
-                              <block type="GetSoldierState">
+                              <block type="GetSoldierState" deletable="false" movable="false" editable="false">
                                 <value name="VALUE-0">
-                                  <block type="EventPlayer"></block>
+                                  <block type="EventPlayer" deletable="false" movable="false" editable="false"></block>
                                 </value>
                                 <value name="VALUE-1">
-                                  <block type="SoldierStateBoolItem">
+                                  <block type="SoldierStateBoolItem" deletable="false" movable="false" editable="false">
                                     <field name="VALUE-0">SoldierStateBool</field>
                                     <field name="VALUE-1">IsAlive</field>
                                   </block>
@@ -501,14 +501,14 @@
                               </block>
                             </value>
                             <next>
-                              <block type="conditionBlock">
+                              <block type="conditionBlock" deletable="false" movable="false" editable="false">
                                 <value name="CONDITION">
-                                  <block type="GetSoldierState">
+                                  <block type="GetSoldierState" deletable="false" movable="false" editable="false">
                                     <value name="VALUE-0">
-                                      <block type="EventPlayer"></block>
+                                      <block type="EventPlayer" deletable="false" movable="false" editable="false"></block>
                                     </value>
                                     <value name="VALUE-1">
-                                      <block type="SoldierStateBoolItem">
+                                      <block type="SoldierStateBoolItem" deletable="false" movable="false" editable="false">
                                         <field name="VALUE-0">SoldierStateBool</field>
                                         <field name="VALUE-1">IsAISoldier</field>
                                       </block>
@@ -516,16 +516,16 @@
                                   </block>
                                 </value>
                                 <next>
-                                  <block type="conditionBlock">
+                                  <block type="conditionBlock" deletable="false" movable="false" editable="false">
                                     <value name="CONDITION">
-                                      <block type="Not">
+                                      <block type="Not" deletable="false" movable="false" editable="false">
                                         <value name="VALUE-0">
-                                          <block type="IsInventorySlotActive">
+                                          <block type="IsInventorySlotActive" deletable="false" movable="false" editable="false">
                                             <value name="VALUE-0">
-                                              <block type="EventPlayer"></block>
+                                              <block type="EventPlayer" deletable="false" movable="false" editable="false"></block>
                                             </value>
                                             <value name="VALUE-1">
-                                              <block type="InventorySlotsItem">
+                                              <block type="InventorySlotsItem" deletable="false" movable="false" editable="false">
                                                 <field name="VALUE-0">InventorySlots</field>
                                                 <field name="VALUE-1">CharacterGadget</field>
                                               </block>
@@ -541,33 +541,33 @@
                           </block>
                         </statement>
                         <statement name="ACTIONS">
-                          <block type="SpotTarget">
+                          <block type="SpotTarget" deletable="false" movable="false" editable="false">
                             <value name="VALUE-0">
-                              <block type="EventPlayer"></block>
+                              <block type="EventPlayer" deletable="false" movable="false" editable="false"></block>
                             </value>
                             <value name="VALUE-1">
-                              <block type="Number">
+                              <block type="Number" deletable="false" movable="false" editable="false">
                                 <field name="NUM">30</field>
                               </block>
                             </value>
                             <next>
-                              <block type="AddSoldierWeapon">
+                              <block type="AddSoldierWeapon" deletable="false" movable="false" editable="false">
                                 <value name="VALUE-0">
-                                  <block type="EventPlayer"></block>
+                                  <block type="EventPlayer" deletable="false" movable="false" editable="false"></block>
                                 </value>
                                 <value name="VALUE-1">
-                                  <block type="CharacterGadgetsItem">
+                                  <block type="CharacterGadgetsItem" deletable="false" movable="false" editable="false">
                                     <field name="VALUE-0">CharacterGadgetsKingston</field>
                                     <field name="VALUE-1">BallisticShield</field>
                                   </block>
                                 </value>
                                 <next>
-                                  <block type="ForceSwitchInventory">
+                                  <block type="ForceSwitchInventory" deletable="false" movable="false" editable="false">
                                     <value name="VALUE-0">
-                                      <block type="EventPlayer"></block>
+                                      <block type="EventPlayer" deletable="false" movable="false" editable="false"></block>
                                     </value>
                                     <value name="VALUE-1">
-                                      <block type="InventorySlotsItem">
+                                      <block type="InventorySlotsItem" deletable="false" movable="false" editable="false">
                                         <field name="VALUE-0">InventorySlots</field>
                                         <field name="VALUE-1">CharacterGadget</field>
                                       </block>
@@ -589,21 +589,21 @@
       </block>
     </statement>
   </block>
-  <block type="SetVariableAtIndex" x="795" y="274"></block>
-  <block type="ruleBlock" x="1760" y="1436">
+  <block type="SetVariableAtIndex" deletable="false" movable="false" editable="false" x="809" y="271"></block>
+  <block type="ruleBlock" deletable="false" movable="false" editable="false" x="1760" y="1436">
     <mutation isOnGoingEvent="true"></mutation>
     <field name="NAME">New Rule</field>
     <field name="EVENTTYPE">Ongoing</field>
     <field name="OBJECTTYPE">Player</field>
     <statement name="CONDITIONS">
-      <block type="conditionBlock">
+      <block type="conditionBlock" deletable="false" movable="false" editable="false">
         <value name="CONDITION">
-          <block type="GetSoldierState">
+          <block type="GetSoldierState" deletable="false" movable="false" editable="false">
             <value name="VALUE-0">
-              <block type="EventPlayer"></block>
+              <block type="EventPlayer" deletable="false" movable="false" editable="false"></block>
             </value>
             <value name="VALUE-1">
-              <block type="SoldierStateBoolItem">
+              <block type="SoldierStateBoolItem" deletable="false" movable="false" editable="false">
                 <field name="VALUE-0">SoldierStateBool</field>
                 <field name="VALUE-1">IsAlive</field>
               </block>
@@ -611,14 +611,14 @@
           </block>
         </value>
         <next>
-          <block type="conditionBlock">
+          <block type="conditionBlock" deletable="false" movable="false" editable="false">
             <value name="CONDITION">
-              <block type="GetSoldierState">
+              <block type="GetSoldierState" deletable="false" movable="false" editable="false">
                 <value name="VALUE-0">
-                  <block type="EventPlayer"></block>
+                  <block type="EventPlayer" deletable="false" movable="false" editable="false"></block>
                 </value>
                 <value name="VALUE-1">
-                  <block type="SoldierStateBoolItem">
+                  <block type="SoldierStateBoolItem" deletable="false" movable="false" editable="false">
                     <field name="VALUE-0">SoldierStateBool</field>
                     <field name="VALUE-1">IsAISoldier</field>
                   </block>
@@ -626,27 +626,27 @@
               </block>
             </value>
             <next>
-              <block type="conditionBlock">
+              <block type="conditionBlock" deletable="false" movable="false" editable="false">
                 <value name="CONDITION">
-                  <block type="GreaterThan">
+                  <block type="GreaterThan" deletable="false" movable="false" editable="false">
                     <value name="VALUE-0">
-                      <block type="CountOf">
+                      <block type="CountOf" deletable="false" movable="false" editable="false">
                         <value name="VALUE-0">
-                          <block type="FilteredArray">
+                          <block type="FilteredArray" deletable="false" movable="false" editable="false">
                             <value name="VALUE-0">
-                              <block type="AllPlayers"></block>
+                              <block type="AllPlayers" deletable="false" movable="false" editable="false"></block>
                             </value>
                             <value name="VALUE-1">
-                              <block type="And">
+                              <block type="And" deletable="false" movable="false" editable="false">
                                 <value name="VALUE-0">
-                                  <block type="Not">
+                                  <block type="Not" deletable="false" movable="false" editable="false">
                                     <value name="VALUE-0">
-                                      <block type="GetSoldierState">
+                                      <block type="GetSoldierState" deletable="false" movable="false" editable="false">
                                         <value name="VALUE-0">
-                                          <block type="CurrentArrayElement"></block>
+                                          <block type="CurrentArrayElement" deletable="false" movable="false" editable="false"></block>
                                         </value>
                                         <value name="VALUE-1">
-                                          <block type="SoldierStateBoolItem">
+                                          <block type="SoldierStateBoolItem" deletable="false" movable="false" editable="false">
                                             <field name="VALUE-0">SoldierStateBool</field>
                                             <field name="VALUE-1">IsAISoldier</field>
                                           </block>
@@ -656,12 +656,12 @@
                                   </block>
                                 </value>
                                 <value name="VALUE-1">
-                                  <block type="GetSoldierState">
+                                  <block type="GetSoldierState" deletable="false" movable="false" editable="false">
                                     <value name="VALUE-0">
-                                      <block type="CurrentArrayElement"></block>
+                                      <block type="CurrentArrayElement" deletable="false" movable="false" editable="false"></block>
                                     </value>
                                     <value name="VALUE-1">
-                                      <block type="SoldierStateBoolItem">
+                                      <block type="SoldierStateBoolItem" deletable="false" movable="false" editable="false">
                                         <field name="VALUE-0">SoldierStateBool</field>
                                         <field name="VALUE-1">IsAlive</field>
                                       </block>
@@ -675,43 +675,43 @@
                       </block>
                     </value>
                     <value name="VALUE-1">
-                      <block type="Number">
+                      <block type="Number" deletable="false" movable="false" editable="false">
                         <field name="NUM">0.5</field>
                       </block>
                     </value>
                   </block>
                 </value>
                 <next>
-                  <block type="conditionBlock">
+                  <block type="conditionBlock" deletable="false" movable="false" editable="false">
                     <value name="CONDITION">
-                      <block type="LessThan">
+                      <block type="LessThan" deletable="false" movable="false" editable="false">
                         <value name="VALUE-0">
-                          <block type="DistanceBetween">
+                          <block type="DistanceBetween" deletable="false" movable="false" editable="false">
                             <value name="VALUE-0">
-                              <block type="Add">
+                              <block type="Add" deletable="false" movable="false" editable="false">
                                 <value name="VALUE-0">
-                                  <block type="Multiply">
+                                  <block type="Multiply" deletable="false" movable="false" editable="false">
                                     <value name="VALUE-0">
-                                      <block type="WorldVectorOf">
+                                      <block type="WorldVectorOf" deletable="false" movable="false" editable="false">
                                         <value name="VALUE-0">
-                                          <block type="ForwardVector"></block>
+                                          <block type="ForwardVector" deletable="false" movable="false" editable="false"></block>
                                         </value>
                                         <value name="VALUE-1">
-                                          <block type="FirstOf">
+                                          <block type="FirstOf" deletable="false" movable="false" editable="false">
                                             <value name="VALUE-0">
-                                              <block type="FilteredArray">
+                                              <block type="FilteredArray" deletable="false" movable="false" editable="false">
                                                 <value name="VALUE-0">
-                                                  <block type="AllPlayers"></block>
+                                                  <block type="AllPlayers" deletable="false" movable="false" editable="false"></block>
                                                 </value>
                                                 <value name="VALUE-1">
-                                                  <block type="Not">
+                                                  <block type="Not" deletable="false" movable="false" editable="false">
                                                     <value name="VALUE-0">
-                                                      <block type="GetSoldierState">
+                                                      <block type="GetSoldierState" deletable="false" movable="false" editable="false">
                                                         <value name="VALUE-0">
-                                                          <block type="CurrentArrayElement"></block>
+                                                          <block type="CurrentArrayElement" deletable="false" movable="false" editable="false"></block>
                                                         </value>
                                                         <value name="VALUE-1">
-                                                          <block type="SoldierStateBoolItem">
+                                                          <block type="SoldierStateBoolItem" deletable="false" movable="false" editable="false">
                                                             <field name="VALUE-0">SoldierStateBool</field>
                                                             <field name="VALUE-1">IsAISoldier</field>
                                                           </block>
@@ -727,30 +727,30 @@
                                       </block>
                                     </value>
                                     <value name="VALUE-1">
-                                      <block type="Number">
+                                      <block type="Number" deletable="false" movable="false" editable="false">
                                         <field name="NUM">5</field>
                                       </block>
                                     </value>
                                   </block>
                                 </value>
                                 <value name="VALUE-1">
-                                  <block type="GetSoldierState">
+                                  <block type="GetSoldierState" deletable="false" movable="false" editable="false">
                                     <value name="VALUE-0">
-                                      <block type="FirstOf">
+                                      <block type="FirstOf" deletable="false" movable="false" editable="false">
                                         <value name="VALUE-0">
-                                          <block type="FilteredArray">
+                                          <block type="FilteredArray" deletable="false" movable="false" editable="false">
                                             <value name="VALUE-0">
-                                              <block type="AllPlayers"></block>
+                                              <block type="AllPlayers" deletable="false" movable="false" editable="false"></block>
                                             </value>
                                             <value name="VALUE-1">
-                                              <block type="Not">
+                                              <block type="Not" deletable="false" movable="false" editable="false">
                                                 <value name="VALUE-0">
-                                                  <block type="GetSoldierState">
+                                                  <block type="GetSoldierState" deletable="false" movable="false" editable="false">
                                                     <value name="VALUE-0">
-                                                      <block type="CurrentArrayElement"></block>
+                                                      <block type="CurrentArrayElement" deletable="false" movable="false" editable="false"></block>
                                                     </value>
                                                     <value name="VALUE-1">
-                                                      <block type="SoldierStateBoolItem">
+                                                      <block type="SoldierStateBoolItem" deletable="false" movable="false" editable="false">
                                                         <field name="VALUE-0">SoldierStateBool</field>
                                                         <field name="VALUE-1">IsAISoldier</field>
                                                       </block>
@@ -764,7 +764,7 @@
                                       </block>
                                     </value>
                                     <value name="VALUE-1">
-                                      <block type="SoldierStateVectorItem">
+                                      <block type="SoldierStateVectorItem" deletable="false" movable="false" editable="false">
                                         <field name="VALUE-0">SoldierStateVector</field>
                                         <field name="VALUE-1">GetPosition</field>
                                       </block>
@@ -774,12 +774,12 @@
                               </block>
                             </value>
                             <value name="VALUE-1">
-                              <block type="GetSoldierState">
+                              <block type="GetSoldierState" deletable="false" movable="false" editable="false">
                                 <value name="VALUE-0">
-                                  <block type="EventPlayer"></block>
+                                  <block type="EventPlayer" deletable="false" movable="false" editable="false"></block>
                                 </value>
                                 <value name="VALUE-1">
-                                  <block type="SoldierStateVectorItem">
+                                  <block type="SoldierStateVectorItem" deletable="false" movable="false" editable="false">
                                     <field name="VALUE-0">SoldierStateVector</field>
                                     <field name="VALUE-1">GetPosition</field>
                                   </block>
@@ -789,7 +789,7 @@
                           </block>
                         </value>
                         <value name="VALUE-1">
-                          <block type="Number">
+                          <block type="Number" deletable="false" movable="false" editable="false">
                             <field name="NUM">0</field>
                           </block>
                         </value>
@@ -804,45 +804,45 @@
       </block>
     </statement>
     <statement name="ACTIONS">
-      <block type="SpotTarget">
+      <block type="SpotTarget" deletable="false" movable="false" editable="false">
         <value name="VALUE-0">
-          <block type="EventPlayer"></block>
+          <block type="EventPlayer" deletable="false" movable="false" editable="false"></block>
         </value>
         <value name="VALUE-1">
-          <block type="Number">
+          <block type="Number" deletable="false" movable="false" editable="false">
             <field name="NUM">30</field>
           </block>
         </value>
         <next>
-          <block type="Teleport">
+          <block type="Teleport" deletable="false" movable="false" editable="false">
             <value name="VALUE-0">
-              <block type="EventPlayer"></block>
+              <block type="EventPlayer" deletable="false" movable="false" editable="false"></block>
             </value>
             <value name="VALUE-1">
-              <block type="Add">
+              <block type="Add" deletable="false" movable="false" editable="false">
                 <value name="VALUE-0">
-                  <block type="Multiply">
+                  <block type="Multiply" deletable="false" movable="false" editable="false">
                     <value name="VALUE-0">
-                      <block type="WorldVectorOf">
+                      <block type="WorldVectorOf" deletable="false" movable="false" editable="false">
                         <value name="VALUE-0">
-                          <block type="ForwardVector"></block>
+                          <block type="ForwardVector" deletable="false" movable="false" editable="false"></block>
                         </value>
                         <value name="VALUE-1">
-                          <block type="FirstOf">
+                          <block type="FirstOf" deletable="false" movable="false" editable="false">
                             <value name="VALUE-0">
-                              <block type="FilteredArray">
+                              <block type="FilteredArray" deletable="false" movable="false" editable="false">
                                 <value name="VALUE-0">
-                                  <block type="AllPlayers"></block>
+                                  <block type="AllPlayers" deletable="false" movable="false" editable="false"></block>
                                 </value>
                                 <value name="VALUE-1">
-                                  <block type="Not">
+                                  <block type="Not" deletable="false" movable="false" editable="false">
                                     <value name="VALUE-0">
-                                      <block type="GetSoldierState">
+                                      <block type="GetSoldierState" deletable="false" movable="false" editable="false">
                                         <value name="VALUE-0">
-                                          <block type="CurrentArrayElement"></block>
+                                          <block type="CurrentArrayElement" deletable="false" movable="false" editable="false"></block>
                                         </value>
                                         <value name="VALUE-1">
-                                          <block type="SoldierStateBoolItem">
+                                          <block type="SoldierStateBoolItem" deletable="false" movable="false" editable="false">
                                             <field name="VALUE-0">SoldierStateBool</field>
                                             <field name="VALUE-1">IsAISoldier</field>
                                           </block>
@@ -858,30 +858,30 @@
                       </block>
                     </value>
                     <value name="VALUE-1">
-                      <block type="Number">
+                      <block type="Number" deletable="false" movable="false" editable="false">
                         <field name="NUM">5</field>
                       </block>
                     </value>
                   </block>
                 </value>
                 <value name="VALUE-1">
-                  <block type="GetSoldierState">
+                  <block type="GetSoldierState" deletable="false" movable="false" editable="false">
                     <value name="VALUE-0">
-                      <block type="FirstOf">
+                      <block type="FirstOf" deletable="false" movable="false" editable="false">
                         <value name="VALUE-0">
-                          <block type="FilteredArray">
+                          <block type="FilteredArray" deletable="false" movable="false" editable="false">
                             <value name="VALUE-0">
-                              <block type="AllPlayers"></block>
+                              <block type="AllPlayers" deletable="false" movable="false" editable="false"></block>
                             </value>
                             <value name="VALUE-1">
-                              <block type="Not">
+                              <block type="Not" deletable="false" movable="false" editable="false">
                                 <value name="VALUE-0">
-                                  <block type="GetSoldierState">
+                                  <block type="GetSoldierState" deletable="false" movable="false" editable="false">
                                     <value name="VALUE-0">
-                                      <block type="CurrentArrayElement"></block>
+                                      <block type="CurrentArrayElement" deletable="false" movable="false" editable="false"></block>
                                     </value>
                                     <value name="VALUE-1">
-                                      <block type="SoldierStateBoolItem">
+                                      <block type="SoldierStateBoolItem" deletable="false" movable="false" editable="false">
                                         <field name="VALUE-0">SoldierStateBool</field>
                                         <field name="VALUE-1">IsAISoldier</field>
                                       </block>
@@ -895,7 +895,7 @@
                       </block>
                     </value>
                     <value name="VALUE-1">
-                      <block type="SoldierStateVectorItem">
+                      <block type="SoldierStateVectorItem" deletable="false" movable="false" editable="false">
                         <field name="VALUE-0">SoldierStateVector</field>
                         <field name="VALUE-1">GetPosition</field>
                       </block>
@@ -905,7 +905,7 @@
               </block>
             </value>
             <value name="VALUE-2">
-              <block type="Number">
+              <block type="Number" deletable="false" movable="false" editable="false">
                 <field name="NUM">0</field>
               </block>
             </value>
@@ -914,30 +914,30 @@
       </block>
     </statement>
   </block>
-  <block type="ruleBlock" x="-75" y="2069">
+  <block type="ruleBlock" deletable="false" movable="false" editable="false" x="-75" y="2069">
     <mutation isOnGoingEvent="false"></mutation>
     <field name="NAME">New Rule</field>
     <field name="EVENTTYPE">OnPlayerDied</field>
     <statement name="CONDITIONS">
-      <block type="conditionBlock">
+      <block type="conditionBlock" deletable="false" movable="false" editable="false">
         <value name="CONDITION">
-          <block type="Equals" inline="false">
+          <block type="Equals" inline="false" deletable="false" movable="false" editable="false">
             <value name="VALUE-0">
-              <block type="CountOf">
+              <block type="CountOf" deletable="false" movable="false" editable="false">
                 <value name="VALUE-0">
-                  <block type="FilteredArray">
+                  <block type="FilteredArray" deletable="false" movable="false" editable="false">
                     <value name="VALUE-0">
-                      <block type="AllPlayers"></block>
+                      <block type="AllPlayers" deletable="false" movable="false" editable="false"></block>
                     </value>
                     <value name="VALUE-1">
-                      <block type="And" inline="false">
+                      <block type="And" inline="false" deletable="false" movable="false" editable="false">
                         <value name="VALUE-0">
-                          <block type="GetSoldierState">
+                          <block type="GetSoldierState" deletable="false" movable="false" editable="false">
                             <value name="VALUE-0">
-                              <block type="CurrentArrayElement"></block>
+                              <block type="CurrentArrayElement" deletable="false" movable="false" editable="false"></block>
                             </value>
                             <value name="VALUE-1">
-                              <block type="SoldierStateBoolItem">
+                              <block type="SoldierStateBoolItem" deletable="false" movable="false" editable="false">
                                 <field name="VALUE-0">SoldierStateBool</field>
                                 <field name="VALUE-1">IsAlive</field>
                               </block>
@@ -945,18 +945,18 @@
                           </block>
                         </value>
                         <value name="VALUE-1">
-                          <block type="Equals">
+                          <block type="Equals" deletable="false" movable="false" editable="false">
                             <value name="VALUE-0">
-                              <block type="GetTeamId">
+                              <block type="GetTeamId" deletable="false" movable="false" editable="false">
                                 <value name="VALUE-0">
-                                  <block type="CurrentArrayElement"></block>
+                                  <block type="CurrentArrayElement" deletable="false" movable="false" editable="false"></block>
                                 </value>
                               </block>
                             </value>
                             <value name="VALUE-1">
-                              <block type="GetTeamId">
+                              <block type="GetTeamId" deletable="false" movable="false" editable="false">
                                 <value name="VALUE-0">
-                                  <block type="EventPlayer"></block>
+                                  <block type="EventPlayer" deletable="false" movable="false" editable="false"></block>
                                 </value>
                               </block>
                             </value>
@@ -969,7 +969,7 @@
               </block>
             </value>
             <value name="VALUE-1">
-              <block type="Number">
+              <block type="Number" deletable="false" movable="false" editable="false">
                 <field name="NUM">0</field>
               </block>
             </value>
@@ -978,46 +978,46 @@
       </block>
     </statement>
     <statement name="ACTIONS">
-      <block type="ShowEventGameModeMessage">
+      <block type="ShowEventGameModeMessage" deletable="false" movable="false" editable="false">
         <value name="VALUE-0">
-          <block type="Message">
+          <block type="Message" deletable="false" movable="false" editable="false">
             <value name="VALUE-0">
-              <block type="Text">
+              <block type="Text" deletable="false" movable="false" editable="false">
                 <field name="TEXT">YOU HAVE LOST!</field>
               </block>
             </value>
           </block>
         </value>
         <value name="VALUE-1">
-          <block type="GetTeamId">
+          <block type="GetTeamId" deletable="false" movable="false" editable="false">
             <value name="VALUE-0">
-              <block type="EventPlayer"></block>
+              <block type="EventPlayer" deletable="false" movable="false" editable="false"></block>
             </value>
           </block>
         </value>
       </block>
     </statement>
   </block>
-  <block type="If" x="0" y="2649">
+  <block type="If" deletable="false" movable="false" editable="false" x="0" y="2649">
     <mutation else="1"></mutation>
     <value name="VALUE-0">
-      <block type="Not">
+      <block type="Not" deletable="false" movable="false" editable="false">
         <value name="VALUE-0">
-          <block type="Equals">
+          <block type="Equals" deletable="false" movable="false" editable="false">
             <value name="VALUE-0">
-              <block type="Modulo">
+              <block type="Modulo" deletable="false" movable="false" editable="false">
                 <value name="VALUE-0">
-                  <block type="GetMatchTimeElapsed"></block>
+                  <block type="GetMatchTimeElapsed" deletable="false" movable="false" editable="false"></block>
                 </value>
                 <value name="VALUE-1">
-                  <block type="Number">
+                  <block type="Number" deletable="false" movable="false" editable="false">
                     <field name="NUM">2</field>
                   </block>
                 </value>
               </block>
             </value>
             <value name="VALUE-1">
-              <block type="Number">
+              <block type="Number" deletable="false" movable="false" editable="false">
                 <field name="NUM">0</field>
               </block>
             </value>
@@ -1026,35 +1026,35 @@
       </block>
     </value>
     <statement name="DO">
-      <block type="Teleport">
+      <block type="Teleport" deletable="false" movable="false" editable="false">
         <value name="VALUE-0">
-          <block type="EventPlayer"></block>
+          <block type="EventPlayer" deletable="false" movable="false" editable="false"></block>
         </value>
         <value name="VALUE-1">
-          <block type="Add">
+          <block type="Add" deletable="false" movable="false" editable="false">
             <value name="VALUE-0">
-              <block type="Multiply">
+              <block type="Multiply" deletable="false" movable="false" editable="false">
                 <value name="VALUE-0">
-                  <block type="WorldVectorOf">
+                  <block type="WorldVectorOf" deletable="false" movable="false" editable="false">
                     <value name="VALUE-0">
-                      <block type="ForwardVector"></block>
+                      <block type="ForwardVector" deletable="false" movable="false" editable="false"></block>
                     </value>
                     <value name="VALUE-1">
-                      <block type="FirstOf">
+                      <block type="FirstOf" deletable="false" movable="false" editable="false">
                         <value name="VALUE-0">
-                          <block type="FilteredArray">
+                          <block type="FilteredArray" deletable="false" movable="false" editable="false">
                             <value name="VALUE-0">
-                              <block type="AllPlayers"></block>
+                              <block type="AllPlayers" deletable="false" movable="false" editable="false"></block>
                             </value>
                             <value name="VALUE-1">
-                              <block type="Not">
+                              <block type="Not" deletable="false" movable="false" editable="false">
                                 <value name="VALUE-0">
-                                  <block type="GetSoldierState">
+                                  <block type="GetSoldierState" deletable="false" movable="false" editable="false">
                                     <value name="VALUE-0">
-                                      <block type="CurrentArrayElement"></block>
+                                      <block type="CurrentArrayElement" deletable="false" movable="false" editable="false"></block>
                                     </value>
                                     <value name="VALUE-1">
-                                      <block type="SoldierStateBoolItem">
+                                      <block type="SoldierStateBoolItem" deletable="false" movable="false" editable="false">
                                         <field name="VALUE-0">SoldierStateBool</field>
                                         <field name="VALUE-1">IsAISoldier</field>
                                       </block>
@@ -1070,30 +1070,30 @@
                   </block>
                 </value>
                 <value name="VALUE-1">
-                  <block type="Number">
+                  <block type="Number" deletable="false" movable="false" editable="false">
                     <field name="NUM">5</field>
                   </block>
                 </value>
               </block>
             </value>
             <value name="VALUE-1">
-              <block type="GetSoldierState">
+              <block type="GetSoldierState" deletable="false" movable="false" editable="false">
                 <value name="VALUE-0">
-                  <block type="FirstOf">
+                  <block type="FirstOf" deletable="false" movable="false" editable="false">
                     <value name="VALUE-0">
-                      <block type="FilteredArray">
+                      <block type="FilteredArray" deletable="false" movable="false" editable="false">
                         <value name="VALUE-0">
-                          <block type="AllPlayers"></block>
+                          <block type="AllPlayers" deletable="false" movable="false" editable="false"></block>
                         </value>
                         <value name="VALUE-1">
-                          <block type="Not">
+                          <block type="Not" deletable="false" movable="false" editable="false">
                             <value name="VALUE-0">
-                              <block type="GetSoldierState">
+                              <block type="GetSoldierState" deletable="false" movable="false" editable="false">
                                 <value name="VALUE-0">
-                                  <block type="CurrentArrayElement"></block>
+                                  <block type="CurrentArrayElement" deletable="false" movable="false" editable="false"></block>
                                 </value>
                                 <value name="VALUE-1">
-                                  <block type="SoldierStateBoolItem">
+                                  <block type="SoldierStateBoolItem" deletable="false" movable="false" editable="false">
                                     <field name="VALUE-0">SoldierStateBool</field>
                                     <field name="VALUE-1">IsAISoldier</field>
                                   </block>
@@ -1107,7 +1107,7 @@
                   </block>
                 </value>
                 <value name="VALUE-1">
-                  <block type="SoldierStateVectorItem">
+                  <block type="SoldierStateVectorItem" deletable="false" movable="false" editable="false">
                     <field name="VALUE-0">SoldierStateVector</field>
                     <field name="VALUE-1">GetPosition</field>
                   </block>
@@ -1117,42 +1117,42 @@
           </block>
         </value>
         <value name="VALUE-2">
-          <block type="Number">
+          <block type="Number" deletable="false" movable="false" editable="false">
             <field name="NUM">0</field>
           </block>
         </value>
       </block>
     </statement>
     <statement name="ELSE">
-      <block type="Teleport">
+      <block type="Teleport" deletable="false" movable="false" editable="false">
         <value name="VALUE-0">
-          <block type="EventPlayer"></block>
+          <block type="EventPlayer" deletable="false" movable="false" editable="false"></block>
         </value>
         <value name="VALUE-1">
-          <block type="Add">
+          <block type="Add" deletable="false" movable="false" editable="false">
             <value name="VALUE-0">
-              <block type="Multiply">
+              <block type="Multiply" deletable="false" movable="false" editable="false">
                 <value name="VALUE-0">
-                  <block type="WorldVectorOf">
+                  <block type="WorldVectorOf" deletable="false" movable="false" editable="false">
                     <value name="VALUE-0">
-                      <block type="UpVector"></block>
+                      <block type="UpVector" deletable="false" movable="false" editable="false"></block>
                     </value>
                     <value name="VALUE-1">
-                      <block type="FirstOf">
+                      <block type="FirstOf" deletable="false" movable="false" editable="false">
                         <value name="VALUE-0">
-                          <block type="FilteredArray">
+                          <block type="FilteredArray" deletable="false" movable="false" editable="false">
                             <value name="VALUE-0">
-                              <block type="AllPlayers"></block>
+                              <block type="AllPlayers" deletable="false" movable="false" editable="false"></block>
                             </value>
                             <value name="VALUE-1">
-                              <block type="Not">
+                              <block type="Not" deletable="false" movable="false" editable="false">
                                 <value name="VALUE-0">
-                                  <block type="GetSoldierState">
+                                  <block type="GetSoldierState" deletable="false" movable="false" editable="false">
                                     <value name="VALUE-0">
-                                      <block type="CurrentArrayElement"></block>
+                                      <block type="CurrentArrayElement" deletable="false" movable="false" editable="false"></block>
                                     </value>
                                     <value name="VALUE-1">
-                                      <block type="SoldierStateBoolItem">
+                                      <block type="SoldierStateBoolItem" deletable="false" movable="false" editable="false">
                                         <field name="VALUE-0">SoldierStateBool</field>
                                         <field name="VALUE-1">IsAISoldier</field>
                                       </block>
@@ -1168,30 +1168,30 @@
                   </block>
                 </value>
                 <value name="VALUE-1">
-                  <block type="Number">
+                  <block type="Number" deletable="false" movable="false" editable="false">
                     <field name="NUM">5</field>
                   </block>
                 </value>
               </block>
             </value>
             <value name="VALUE-1">
-              <block type="GetSoldierState">
+              <block type="GetSoldierState" deletable="false" movable="false" editable="false">
                 <value name="VALUE-0">
-                  <block type="FirstOf">
+                  <block type="FirstOf" deletable="false" movable="false" editable="false">
                     <value name="VALUE-0">
-                      <block type="FilteredArray">
+                      <block type="FilteredArray" deletable="false" movable="false" editable="false">
                         <value name="VALUE-0">
-                          <block type="AllPlayers"></block>
+                          <block type="AllPlayers" deletable="false" movable="false" editable="false"></block>
                         </value>
                         <value name="VALUE-1">
-                          <block type="Not">
+                          <block type="Not" deletable="false" movable="false" editable="false">
                             <value name="VALUE-0">
-                              <block type="GetSoldierState">
+                              <block type="GetSoldierState" deletable="false" movable="false" editable="false">
                                 <value name="VALUE-0">
-                                  <block type="CurrentArrayElement"></block>
+                                  <block type="CurrentArrayElement" deletable="false" movable="false" editable="false"></block>
                                 </value>
                                 <value name="VALUE-1">
-                                  <block type="SoldierStateBoolItem">
+                                  <block type="SoldierStateBoolItem" deletable="false" movable="false" editable="false">
                                     <field name="VALUE-0">SoldierStateBool</field>
                                     <field name="VALUE-1">IsAISoldier</field>
                                   </block>
@@ -1205,7 +1205,7 @@
                   </block>
                 </value>
                 <value name="VALUE-1">
-                  <block type="SoldierStateVectorItem">
+                  <block type="SoldierStateVectorItem" deletable="false" movable="false" editable="false">
                     <field name="VALUE-0">SoldierStateVector</field>
                     <field name="VALUE-1">GetPosition</field>
                   </block>
@@ -1215,33 +1215,33 @@
           </block>
         </value>
         <value name="VALUE-2">
-          <block type="Number">
+          <block type="Number" deletable="false" movable="false" editable="false">
             <field name="NUM">0</field>
           </block>
         </value>
       </block>
     </statement>
     <next>
-      <block type="SpotTarget">
+      <block type="SpotTarget" deletable="false" movable="false" editable="false">
         <value name="VALUE-0">
-          <block type="EventPlayer"></block>
+          <block type="EventPlayer" deletable="false" movable="false" editable="false"></block>
         </value>
         <value name="VALUE-1">
-          <block type="Number">
+          <block type="Number" deletable="false" movable="false" editable="false">
             <field name="NUM">1</field>
           </block>
         </value>
         <next>
-          <block type="If">
+          <block type="If" deletable="false" movable="false" editable="false">
             <value name="VALUE-0">
-              <block type="Not">
+              <block type="Not" deletable="false" movable="false" editable="false">
                 <value name="VALUE-0">
-                  <block type="IsInventorySlotActive">
+                  <block type="IsInventorySlotActive" deletable="false" movable="false" editable="false">
                     <value name="VALUE-0">
-                      <block type="EventPlayer"></block>
+                      <block type="EventPlayer" deletable="false" movable="false" editable="false"></block>
                     </value>
                     <value name="VALUE-1">
-                      <block type="InventorySlotsItem">
+                      <block type="InventorySlotsItem" deletable="false" movable="false" editable="false">
                         <field name="VALUE-0">InventorySlots</field>
                         <field name="VALUE-1">CharacterGadget</field>
                       </block>
@@ -1251,12 +1251,12 @@
               </block>
             </value>
             <statement name="DO">
-              <block type="ForceSwitchInventory">
+              <block type="ForceSwitchInventory" deletable="false" movable="false" editable="false">
                 <value name="VALUE-0">
-                  <block type="EventPlayer"></block>
+                  <block type="EventPlayer" deletable="false" movable="false" editable="false"></block>
                 </value>
                 <value name="VALUE-1">
-                  <block type="InventorySlotsItem">
+                  <block type="InventorySlotsItem" deletable="false" movable="false" editable="false">
                     <field name="VALUE-0">InventorySlots</field>
                     <field name="VALUE-1">CharacterGadget</field>
                   </block>
@@ -1264,9 +1264,9 @@
               </block>
             </statement>
             <next>
-              <block type="Wait">
+              <block type="Wait" deletable="false" movable="false" editable="false">
                 <value name="VALUE-0">
-                  <block type="Number">
+                  <block type="Number" deletable="false" movable="false" editable="false">
                     <field name="NUM">0.2</field>
                   </block>
                 </value>
@@ -1277,21 +1277,21 @@
       </block>
     </next>
   </block>
-  <block type="subroutineBlock" deletable="false" x="0" y="3304">
+  <block type="subroutineBlock" deletable="false" movable="false" editable="false" x="0" y="3304">
     <field name="SUBROUTINE_NAME">subroutine1</field>
     <statement name="ACTIONS">
-      <block type="DisplayCustomNotificationMessage">
+      <block type="DisplayCustomNotificationMessage" deletable="false" movable="false" editable="false">
         <value name="VALUE-0">
-          <block type="Message">
+          <block type="Message" deletable="false" movable="false" editable="false">
             <value name="VALUE-0">
-              <block type="Text">
+              <block type="Text" deletable="false" movable="false" editable="false">
                 <field name="TEXT">Ongoing: {} {}</field>
               </block>
             </value>
             <value name="VALUE-1">
-              <block type="GetVariable">
+              <block type="GetVariable" deletable="false" movable="false" editable="false">
                 <value name="VALUE-0">
-                  <block type="variableReferenceBlock">
+                  <block type="variableReferenceBlock" deletable="false" movable="false" editable="false">
                     <mutation isObjectVar="false"></mutation>
                     <field name="OBJECTTYPE">Global</field>
                     <field name="VAR" id="#7zq+R,(tHTMA@wg3!5o" variabletype="Global">initialized</field>
@@ -1300,9 +1300,9 @@
               </block>
             </value>
             <value name="VALUE-2">
-              <block type="GetVariable">
+              <block type="GetVariable" deletable="false" movable="false" editable="false">
                 <value name="VALUE-0">
-                  <block type="variableReferenceBlock">
+                  <block type="variableReferenceBlock" deletable="false" movable="false" editable="false">
                     <mutation isObjectVar="false"></mutation>
                     <field name="OBJECTTYPE">Global</field>
                     <field name="VAR" id="gXokqt+jjLJSsiQsj^$$" variabletype="Global">ongoingCounter</field>
@@ -1313,25 +1313,25 @@
           </block>
         </value>
         <value name="VALUE-1">
-          <block type="CustomMessagesItem">
+          <block type="CustomMessagesItem" deletable="false" movable="false" editable="false">
             <field name="VALUE-0">CustomMessages</field>
             <field name="VALUE-1">HeaderText</field>
           </block>
         </value>
         <value name="VALUE-2">
-          <block type="Number">
+          <block type="Number" deletable="false" movable="false" editable="false">
             <field name="NUM">1</field>
           </block>
         </value>
         <next>
-          <block type="If">
+          <block type="If" deletable="false" movable="false" editable="false">
             <mutation else="1"></mutation>
             <value name="VALUE-0">
-              <block type="Equals">
+              <block type="Equals" deletable="false" movable="false" editable="false">
                 <value name="VALUE-0">
-                  <block type="GetVariable">
+                  <block type="GetVariable" deletable="false" movable="false" editable="false">
                     <value name="VALUE-0">
-                      <block type="variableReferenceBlock">
+                      <block type="variableReferenceBlock" deletable="false" movable="false" editable="false">
                         <mutation isObjectVar="false"></mutation>
                         <field name="OBJECTTYPE">Global</field>
                         <field name="VAR" id="gXokqt+jjLJSsiQsj^$$" variabletype="Global">ongoingCounter</field>
@@ -1340,43 +1340,43 @@
                   </block>
                 </value>
                 <value name="VALUE-1">
-                  <block type="Number">
+                  <block type="Number" deletable="false" movable="false" editable="false">
                     <field name="NUM">100</field>
                   </block>
                 </value>
               </block>
             </value>
             <statement name="DO">
-              <block type="SetVariable">
+              <block type="SetVariable" deletable="false" movable="false" editable="false">
                 <value name="VALUE-0">
-                  <block type="variableReferenceBlock">
+                  <block type="variableReferenceBlock" deletable="false" movable="false" editable="false">
                     <mutation isObjectVar="false"></mutation>
                     <field name="OBJECTTYPE">Global</field>
                     <field name="VAR" id="gXokqt+jjLJSsiQsj^$$" variabletype="Global">ongoingCounter</field>
                   </block>
                 </value>
                 <value name="VALUE-1">
-                  <block type="Number">
+                  <block type="Number" deletable="false" movable="false" editable="false">
                     <field name="NUM">2</field>
                   </block>
                 </value>
               </block>
             </statement>
             <statement name="ELSE">
-              <block type="SetVariable">
+              <block type="SetVariable" deletable="false" movable="false" editable="false">
                 <value name="VALUE-0">
-                  <block type="variableReferenceBlock">
+                  <block type="variableReferenceBlock" deletable="false" movable="false" editable="false">
                     <mutation isObjectVar="false"></mutation>
                     <field name="OBJECTTYPE">Global</field>
                     <field name="VAR" id="gXokqt+jjLJSsiQsj^$$" variabletype="Global">ongoingCounter</field>
                   </block>
                 </value>
                 <value name="VALUE-1">
-                  <block type="Add">
+                  <block type="Add" deletable="false" movable="false" editable="false">
                     <value name="VALUE-0">
-                      <block type="GetVariable">
+                      <block type="GetVariable" deletable="false" movable="false" editable="false">
                         <value name="VALUE-0">
-                          <block type="variableReferenceBlock">
+                          <block type="variableReferenceBlock" deletable="false" movable="false" editable="false">
                             <mutation isObjectVar="false"></mutation>
                             <field name="OBJECTTYPE">Global</field>
                             <field name="VAR" id="gXokqt+jjLJSsiQsj^$$" variabletype="Global">ongoingCounter</field>
@@ -1385,7 +1385,7 @@
                       </block>
                     </value>
                     <value name="VALUE-1">
-                      <block type="Number">
+                      <block type="Number" deletable="false" movable="false" editable="false">
                         <field name="NUM">1</field>
                       </block>
                     </value>
@@ -1398,51 +1398,51 @@
       </block>
     </statement>
   </block>
-  <block type="subroutineBlock" deletable="false" x="0" y="3832">
+  <block type="subroutineBlock" deletable="false" movable="false" editable="false" x="0" y="3832">
     <field name="SUBROUTINE_NAME">debug1</field>
     <statement name="ACTIONS">
-      <block type="DisplayCustomNotificationMessage">
+      <block type="DisplayCustomNotificationMessage" deletable="false" movable="false" editable="false">
         <value name="VALUE-0">
-          <block type="Message">
+          <block type="Message" deletable="false" movable="false" editable="false">
             <value name="VALUE-0">
-              <block type="Text">
+              <block type="Text" deletable="false" movable="false" editable="false">
                 <field name="TEXT">Debug 1</field>
               </block>
             </value>
           </block>
         </value>
         <value name="VALUE-1">
-          <block type="CustomMessagesItem">
+          <block type="CustomMessagesItem" deletable="false" movable="false" editable="false">
             <field name="VALUE-0">CustomMessages</field>
             <field name="VALUE-1">HeaderText</field>
           </block>
         </value>
         <value name="VALUE-2">
-          <block type="Number">
+          <block type="Number" deletable="false" movable="false" editable="false">
             <field name="NUM">1</field>
           </block>
         </value>
         <value name="VALUE-3">
-          <block type="EventPlayer"></block>
+          <block type="EventPlayer" deletable="false" movable="false" editable="false"></block>
         </value>
         <next>
-          <block type="DisplayCustomNotificationMessage">
+          <block type="DisplayCustomNotificationMessage" deletable="false" movable="false" editable="false">
             <value name="VALUE-0">
-              <block type="Message">
+              <block type="Message" deletable="false" movable="false" editable="false">
                 <value name="VALUE-0">
-                  <block type="Text">
+                  <block type="Text" deletable="false" movable="false" editable="false">
                     <field name="TEXT">Position X: {} Y: {} Z: {}</field>
                   </block>
                 </value>
                 <value name="VALUE-1">
-                  <block type="XComponentOf">
+                  <block type="XComponentOf" deletable="false" movable="false" editable="false">
                     <value name="VALUE-0">
-                      <block type="GetSoldierState">
+                      <block type="GetSoldierState" deletable="false" movable="false" editable="false">
                         <value name="VALUE-0">
-                          <block type="EventPlayer"></block>
+                          <block type="EventPlayer" deletable="false" movable="false" editable="false"></block>
                         </value>
                         <value name="VALUE-1">
-                          <block type="SoldierStateVectorItem">
+                          <block type="SoldierStateVectorItem" deletable="false" movable="false" editable="false">
                             <field name="VALUE-0">SoldierStateVector</field>
                             <field name="VALUE-1">GetPosition</field>
                           </block>
@@ -1452,14 +1452,14 @@
                   </block>
                 </value>
                 <value name="VALUE-2">
-                  <block type="YComponentOf">
+                  <block type="YComponentOf" deletable="false" movable="false" editable="false">
                     <value name="VALUE-0">
-                      <block type="GetSoldierState">
+                      <block type="GetSoldierState" deletable="false" movable="false" editable="false">
                         <value name="VALUE-0">
-                          <block type="EventPlayer"></block>
+                          <block type="EventPlayer" deletable="false" movable="false" editable="false"></block>
                         </value>
                         <value name="VALUE-1">
-                          <block type="SoldierStateVectorItem">
+                          <block type="SoldierStateVectorItem" deletable="false" movable="false" editable="false">
                             <field name="VALUE-0">SoldierStateVector</field>
                             <field name="VALUE-1">GetPosition</field>
                           </block>
@@ -1469,14 +1469,14 @@
                   </block>
                 </value>
                 <value name="VALUE-3">
-                  <block type="ZComponentOf">
+                  <block type="ZComponentOf" deletable="false" movable="false" editable="false">
                     <value name="VALUE-0">
-                      <block type="GetSoldierState">
+                      <block type="GetSoldierState" deletable="false" movable="false" editable="false">
                         <value name="VALUE-0">
-                          <block type="EventPlayer"></block>
+                          <block type="EventPlayer" deletable="false" movable="false" editable="false"></block>
                         </value>
                         <value name="VALUE-1">
-                          <block type="SoldierStateVectorItem">
+                          <block type="SoldierStateVectorItem" deletable="false" movable="false" editable="false">
                             <field name="VALUE-0">SoldierStateVector</field>
                             <field name="VALUE-1">GetPosition</field>
                           </block>
@@ -1488,55 +1488,55 @@
               </block>
             </value>
             <value name="VALUE-1">
-              <block type="CustomMessagesItem">
+              <block type="CustomMessagesItem" deletable="false" movable="false" editable="false">
                 <field name="VALUE-0">CustomMessages</field>
                 <field name="VALUE-1">MessageText2</field>
               </block>
             </value>
             <value name="VALUE-2">
-              <block type="Number">
+              <block type="Number" deletable="false" movable="false" editable="false">
                 <field name="NUM">1</field>
               </block>
             </value>
             <value name="VALUE-3">
-              <block type="EventPlayer"></block>
+              <block type="EventPlayer" deletable="false" movable="false" editable="false"></block>
             </value>
             <next>
-              <block type="DisplayCustomNotificationMessage">
+              <block type="DisplayCustomNotificationMessage" deletable="false" movable="false" editable="false">
                 <value name="VALUE-0">
-                  <block type="Message">
+                  <block type="Message" deletable="false" movable="false" editable="false">
                     <value name="VALUE-0">
-                      <block type="Text">
+                      <block type="Text" deletable="false" movable="false" editable="false">
                         <field name="TEXT">Distance: {}</field>
                       </block>
                     </value>
                     <value name="VALUE-1">
-                      <block type="DistanceBetween">
+                      <block type="DistanceBetween" deletable="false" movable="false" editable="false">
                         <value name="VALUE-0">
-                          <block type="Add">
+                          <block type="Add" deletable="false" movable="false" editable="false">
                             <value name="VALUE-0">
-                              <block type="Multiply">
+                              <block type="Multiply" deletable="false" movable="false" editable="false">
                                 <value name="VALUE-0">
-                                  <block type="WorldVectorOf">
+                                  <block type="WorldVectorOf" deletable="false" movable="false" editable="false">
                                     <value name="VALUE-0">
-                                      <block type="ForwardVector"></block>
+                                      <block type="ForwardVector" deletable="false" movable="false" editable="false"></block>
                                     </value>
                                     <value name="VALUE-1">
-                                      <block type="FirstOf">
+                                      <block type="FirstOf" deletable="false" movable="false" editable="false">
                                         <value name="VALUE-0">
-                                          <block type="FilteredArray">
+                                          <block type="FilteredArray" deletable="false" movable="false" editable="false">
                                             <value name="VALUE-0">
-                                              <block type="AllPlayers"></block>
+                                              <block type="AllPlayers" deletable="false" movable="false" editable="false"></block>
                                             </value>
                                             <value name="VALUE-1">
-                                              <block type="Not">
+                                              <block type="Not" deletable="false" movable="false" editable="false">
                                                 <value name="VALUE-0">
-                                                  <block type="GetSoldierState">
+                                                  <block type="GetSoldierState" deletable="false" movable="false" editable="false">
                                                     <value name="VALUE-0">
-                                                      <block type="CurrentArrayElement"></block>
+                                                      <block type="CurrentArrayElement" deletable="false" movable="false" editable="false"></block>
                                                     </value>
                                                     <value name="VALUE-1">
-                                                      <block type="SoldierStateBoolItem">
+                                                      <block type="SoldierStateBoolItem" deletable="false" movable="false" editable="false">
                                                         <field name="VALUE-0">SoldierStateBool</field>
                                                         <field name="VALUE-1">IsAISoldier</field>
                                                       </block>
@@ -1552,30 +1552,30 @@
                                   </block>
                                 </value>
                                 <value name="VALUE-1">
-                                  <block type="Number">
+                                  <block type="Number" deletable="false" movable="false" editable="false">
                                     <field name="NUM">5</field>
                                   </block>
                                 </value>
                               </block>
                             </value>
                             <value name="VALUE-1">
-                              <block type="GetSoldierState">
+                              <block type="GetSoldierState" deletable="false" movable="false" editable="false">
                                 <value name="VALUE-0">
-                                  <block type="FirstOf">
+                                  <block type="FirstOf" deletable="false" movable="false" editable="false">
                                     <value name="VALUE-0">
-                                      <block type="FilteredArray">
+                                      <block type="FilteredArray" deletable="false" movable="false" editable="false">
                                         <value name="VALUE-0">
-                                          <block type="AllPlayers"></block>
+                                          <block type="AllPlayers" deletable="false" movable="false" editable="false"></block>
                                         </value>
                                         <value name="VALUE-1">
-                                          <block type="Not">
+                                          <block type="Not" deletable="false" movable="false" editable="false">
                                             <value name="VALUE-0">
-                                              <block type="GetSoldierState">
+                                              <block type="GetSoldierState" deletable="false" movable="false" editable="false">
                                                 <value name="VALUE-0">
-                                                  <block type="CurrentArrayElement"></block>
+                                                  <block type="CurrentArrayElement" deletable="false" movable="false" editable="false"></block>
                                                 </value>
                                                 <value name="VALUE-1">
-                                                  <block type="SoldierStateBoolItem">
+                                                  <block type="SoldierStateBoolItem" deletable="false" movable="false" editable="false">
                                                     <field name="VALUE-0">SoldierStateBool</field>
                                                     <field name="VALUE-1">IsAISoldier</field>
                                                   </block>
@@ -1589,7 +1589,7 @@
                                   </block>
                                 </value>
                                 <value name="VALUE-1">
-                                  <block type="SoldierStateVectorItem">
+                                  <block type="SoldierStateVectorItem" deletable="false" movable="false" editable="false">
                                     <field name="VALUE-0">SoldierStateVector</field>
                                     <field name="VALUE-1">GetPosition</field>
                                   </block>
@@ -1599,21 +1599,21 @@
                           </block>
                         </value>
                         <value name="VALUE-1">
-                          <block type="GetSoldierState">
+                          <block type="GetSoldierState" deletable="false" movable="false" editable="false">
                             <value name="VALUE-0">
-                              <block type="FirstOf">
+                              <block type="FirstOf" deletable="false" movable="false" editable="false">
                                 <value name="VALUE-0">
-                                  <block type="FilteredArray">
+                                  <block type="FilteredArray" deletable="false" movable="false" editable="false">
                                     <value name="VALUE-0">
-                                      <block type="AllPlayers"></block>
+                                      <block type="AllPlayers" deletable="false" movable="false" editable="false"></block>
                                     </value>
                                     <value name="VALUE-1">
-                                      <block type="GetSoldierState">
+                                      <block type="GetSoldierState" deletable="false" movable="false" editable="false">
                                         <value name="VALUE-0">
-                                          <block type="CurrentArrayElement"></block>
+                                          <block type="CurrentArrayElement" deletable="false" movable="false" editable="false"></block>
                                         </value>
                                         <value name="VALUE-1">
-                                          <block type="SoldierStateBoolItem">
+                                          <block type="SoldierStateBoolItem" deletable="false" movable="false" editable="false">
                                             <field name="VALUE-0">SoldierStateBool</field>
                                             <field name="VALUE-1">IsAISoldier</field>
                                           </block>
@@ -1625,7 +1625,7 @@
                               </block>
                             </value>
                             <value name="VALUE-1">
-                              <block type="SoldierStateVectorItem">
+                              <block type="SoldierStateVectorItem" deletable="false" movable="false" editable="false">
                                 <field name="VALUE-0">SoldierStateVector</field>
                                 <field name="VALUE-1">GetPosition</field>
                               </block>
@@ -1637,18 +1637,18 @@
                   </block>
                 </value>
                 <value name="VALUE-1">
-                  <block type="CustomMessagesItem">
+                  <block type="CustomMessagesItem" deletable="false" movable="false" editable="false">
                     <field name="VALUE-0">CustomMessages</field>
                     <field name="VALUE-1">MessageText2</field>
                   </block>
                 </value>
                 <value name="VALUE-2">
-                  <block type="Number">
+                  <block type="Number" deletable="false" movable="false" editable="false">
                     <field name="NUM">1</field>
                   </block>
                 </value>
                 <value name="VALUE-3">
-                  <block type="EventPlayer"></block>
+                  <block type="EventPlayer" deletable="false" movable="false" editable="false"></block>
                 </value>
               </block>
             </next>
@@ -1657,51 +1657,51 @@
       </block>
     </statement>
   </block>
-  <block type="subroutineBlock" deletable="false" x="0" y="4304">
+  <block type="subroutineBlock" deletable="false" movable="false" editable="false" x="0" y="4304">
     <field name="SUBROUTINE_NAME">debug2</field>
     <statement name="ACTIONS">
-      <block type="DisplayCustomNotificationMessage">
+      <block type="DisplayCustomNotificationMessage" deletable="false" movable="false" editable="false">
         <value name="VALUE-0">
-          <block type="Message">
+          <block type="Message" deletable="false" movable="false" editable="false">
             <value name="VALUE-0">
-              <block type="Text">
+              <block type="Text" deletable="false" movable="false" editable="false">
                 <field name="TEXT">Debug 2</field>
               </block>
             </value>
           </block>
         </value>
         <value name="VALUE-1">
-          <block type="CustomMessagesItem">
+          <block type="CustomMessagesItem" deletable="false" movable="false" editable="false">
             <field name="VALUE-0">CustomMessages</field>
             <field name="VALUE-1">HeaderText</field>
           </block>
         </value>
         <value name="VALUE-2">
-          <block type="Number">
+          <block type="Number" deletable="false" movable="false" editable="false">
             <field name="NUM">1</field>
           </block>
         </value>
         <value name="VALUE-3">
-          <block type="EventPlayer"></block>
+          <block type="EventPlayer" deletable="false" movable="false" editable="false"></block>
         </value>
         <next>
-          <block type="DisplayCustomNotificationMessage">
+          <block type="DisplayCustomNotificationMessage" deletable="false" movable="false" editable="false">
             <value name="VALUE-0">
-              <block type="Message">
+              <block type="Message" deletable="false" movable="false" editable="false">
                 <value name="VALUE-0">
-                  <block type="Text">
+                  <block type="Text" deletable="false" movable="false" editable="false">
                     <field name="TEXT">Position X: {} Y: {} Z: {}</field>
                   </block>
                 </value>
                 <value name="VALUE-1">
-                  <block type="XComponentOf">
+                  <block type="XComponentOf" deletable="false" movable="false" editable="false">
                     <value name="VALUE-0">
-                      <block type="GetSoldierState">
+                      <block type="GetSoldierState" deletable="false" movable="false" editable="false">
                         <value name="VALUE-0">
-                          <block type="EventPlayer"></block>
+                          <block type="EventPlayer" deletable="false" movable="false" editable="false"></block>
                         </value>
                         <value name="VALUE-1">
-                          <block type="SoldierStateVectorItem">
+                          <block type="SoldierStateVectorItem" deletable="false" movable="false" editable="false">
                             <field name="VALUE-0">SoldierStateVector</field>
                             <field name="VALUE-1">GetPosition</field>
                           </block>
@@ -1711,14 +1711,14 @@
                   </block>
                 </value>
                 <value name="VALUE-2">
-                  <block type="YComponentOf">
+                  <block type="YComponentOf" deletable="false" movable="false" editable="false">
                     <value name="VALUE-0">
-                      <block type="GetSoldierState">
+                      <block type="GetSoldierState" deletable="false" movable="false" editable="false">
                         <value name="VALUE-0">
-                          <block type="EventPlayer"></block>
+                          <block type="EventPlayer" deletable="false" movable="false" editable="false"></block>
                         </value>
                         <value name="VALUE-1">
-                          <block type="SoldierStateVectorItem">
+                          <block type="SoldierStateVectorItem" deletable="false" movable="false" editable="false">
                             <field name="VALUE-0">SoldierStateVector</field>
                             <field name="VALUE-1">GetPosition</field>
                           </block>
@@ -1728,14 +1728,14 @@
                   </block>
                 </value>
                 <value name="VALUE-3">
-                  <block type="ZComponentOf">
+                  <block type="ZComponentOf" deletable="false" movable="false" editable="false">
                     <value name="VALUE-0">
-                      <block type="GetSoldierState">
+                      <block type="GetSoldierState" deletable="false" movable="false" editable="false">
                         <value name="VALUE-0">
-                          <block type="EventPlayer"></block>
+                          <block type="EventPlayer" deletable="false" movable="false" editable="false"></block>
                         </value>
                         <value name="VALUE-1">
-                          <block type="SoldierStateVectorItem">
+                          <block type="SoldierStateVectorItem" deletable="false" movable="false" editable="false">
                             <field name="VALUE-0">SoldierStateVector</field>
                             <field name="VALUE-1">GetPosition</field>
                           </block>
@@ -1747,38 +1747,38 @@
               </block>
             </value>
             <value name="VALUE-1">
-              <block type="CustomMessagesItem">
+              <block type="CustomMessagesItem" deletable="false" movable="false" editable="false">
                 <field name="VALUE-0">CustomMessages</field>
                 <field name="VALUE-1">MessageText2</field>
               </block>
             </value>
             <value name="VALUE-2">
-              <block type="Number">
+              <block type="Number" deletable="false" movable="false" editable="false">
                 <field name="NUM">1</field>
               </block>
             </value>
             <value name="VALUE-3">
-              <block type="EventPlayer"></block>
+              <block type="EventPlayer" deletable="false" movable="false" editable="false"></block>
             </value>
           </block>
         </next>
       </block>
     </statement>
   </block>
-  <block type="ruleBlock" x="0" y="4653">
+  <block type="ruleBlock" deletable="false" movable="false" editable="false" x="0" y="4653">
     <mutation isOnGoingEvent="true"></mutation>
     <field name="NAME">New Rule</field>
     <field name="EVENTTYPE">Ongoing</field>
     <field name="OBJECTTYPE">Player</field>
     <statement name="CONDITIONS">
-      <block type="conditionBlock">
+      <block type="conditionBlock" deletable="false" movable="false" editable="false">
         <value name="CONDITION">
-          <block type="GetSoldierState">
+          <block type="GetSoldierState" deletable="false" movable="false" editable="false">
             <value name="VALUE-0">
-              <block type="EventPlayer"></block>
+              <block type="EventPlayer" deletable="false" movable="false" editable="false"></block>
             </value>
             <value name="VALUE-1">
-              <block type="SoldierStateBoolItem">
+              <block type="SoldierStateBoolItem" deletable="false" movable="false" editable="false">
                 <field name="VALUE-0">SoldierStateBool</field>
                 <field name="VALUE-1">IsAlive</field>
               </block>
@@ -1786,16 +1786,16 @@
           </block>
         </value>
         <next>
-          <block type="conditionBlock">
+          <block type="conditionBlock" deletable="false" movable="false" editable="false">
             <value name="CONDITION">
-              <block type="Not">
+              <block type="Not" deletable="false" movable="false" editable="false">
                 <value name="VALUE-0">
-                  <block type="GetSoldierState">
+                  <block type="GetSoldierState" deletable="false" movable="false" editable="false">
                     <value name="VALUE-0">
-                      <block type="EventPlayer"></block>
+                      <block type="EventPlayer" deletable="false" movable="false" editable="false"></block>
                     </value>
                     <value name="VALUE-1">
-                      <block type="SoldierStateBoolItem">
+                      <block type="SoldierStateBoolItem" deletable="false" movable="false" editable="false">
                         <field name="VALUE-0">SoldierStateBool</field>
                         <field name="VALUE-1">IsAISoldier</field>
                       </block>
@@ -1809,14 +1809,14 @@
       </block>
     </statement>
     <statement name="ACTIONS">
-      <block type="While">
+      <block type="While" deletable="false" movable="false" editable="false">
         <value name="VALUE-0">
-          <block type="GetSoldierState">
+          <block type="GetSoldierState" deletable="false" movable="false" editable="false">
             <value name="VALUE-0">
-              <block type="EventPlayer"></block>
+              <block type="EventPlayer" deletable="false" movable="false" editable="false"></block>
             </value>
             <value name="VALUE-1">
-              <block type="SoldierStateBoolItem">
+              <block type="SoldierStateBoolItem" deletable="false" movable="false" editable="false">
                 <field name="VALUE-0">SoldierStateBool</field>
                 <field name="VALUE-1">IsAlive</field>
               </block>
@@ -1824,14 +1824,14 @@
           </block>
         </value>
         <statement name="DO">
-          <block type="If">
+          <block type="If" deletable="false" movable="false" editable="false">
             <value name="VALUE-0">
-              <block type="GetSoldierState">
+              <block type="GetSoldierState" deletable="false" movable="false" editable="false">
                 <value name="VALUE-0">
-                  <block type="EventPlayer"></block>
+                  <block type="EventPlayer" deletable="false" movable="false" editable="false"></block>
                 </value>
                 <value name="VALUE-1">
-                  <block type="SoldierStateBoolItem">
+                  <block type="SoldierStateBoolItem" deletable="false" movable="false" editable="false">
                     <field name="VALUE-0">SoldierStateBool</field>
                     <field name="VALUE-1">IsInteracting</field>
                   </block>
@@ -1839,47 +1839,47 @@
               </block>
             </value>
             <statement name="DO">
-              <block type="Teleport">
+              <block type="Teleport" deletable="false" movable="false" editable="false">
                 <value name="VALUE-0">
-                  <block type="EventPlayer"></block>
+                  <block type="EventPlayer" deletable="false" movable="false" editable="false"></block>
                 </value>
                 <value name="VALUE-1">
-                  <block type="CreateVector">
+                  <block type="CreateVector" deletable="false" movable="false" editable="false">
                     <value name="VALUE-0">
-                      <block type="Number">
+                      <block type="Number" deletable="false" movable="false" editable="false">
                         <field name="NUM">-200</field>
                       </block>
                     </value>
                     <value name="VALUE-1">
-                      <block type="Number">
+                      <block type="Number" deletable="false" movable="false" editable="false">
                         <field name="NUM">-10</field>
                       </block>
                     </value>
                     <value name="VALUE-2">
-                      <block type="Number">
+                      <block type="Number" deletable="false" movable="false" editable="false">
                         <field name="NUM">80</field>
                       </block>
                     </value>
                   </block>
                 </value>
                 <value name="VALUE-2">
-                  <block type="Number">
+                  <block type="Number" deletable="false" movable="false" editable="false">
                     <field name="NUM">0</field>
                   </block>
                 </value>
               </block>
             </statement>
             <next>
-              <block type="If">
+              <block type="If" deletable="false" movable="false" editable="false">
                 <value name="VALUE-0">
-                  <block type="And">
+                  <block type="And" deletable="false" movable="false" editable="false">
                     <value name="VALUE-0">
-                      <block type="GetSoldierState">
+                      <block type="GetSoldierState" deletable="false" movable="false" editable="false">
                         <value name="VALUE-0">
-                          <block type="EventPlayer"></block>
+                          <block type="EventPlayer" deletable="false" movable="false" editable="false"></block>
                         </value>
                         <value name="VALUE-1">
-                          <block type="SoldierStateBoolItem">
+                          <block type="SoldierStateBoolItem" deletable="false" movable="false" editable="false">
                             <field name="VALUE-0">SoldierStateBool</field>
                             <field name="VALUE-1">IsCrouching</field>
                           </block>
@@ -1887,12 +1887,12 @@
                       </block>
                     </value>
                     <value name="VALUE-1">
-                      <block type="GetSoldierState">
+                      <block type="GetSoldierState" deletable="false" movable="false" editable="false">
                         <value name="VALUE-0">
-                          <block type="EventPlayer"></block>
+                          <block type="EventPlayer" deletable="false" movable="false" editable="false"></block>
                         </value>
                         <value name="VALUE-1">
-                          <block type="SoldierStateBoolItem">
+                          <block type="SoldierStateBoolItem" deletable="false" movable="false" editable="false">
                             <field name="VALUE-0">SoldierStateBool</field>
                             <field name="VALUE-1">IsInteracting</field>
                           </block>
@@ -1902,74 +1902,74 @@
                   </block>
                 </value>
                 <statement name="DO">
-                  <block type="Teleport">
+                  <block type="Teleport" deletable="false" movable="false" editable="false">
                     <value name="VALUE-0">
-                      <block type="EventPlayer"></block>
+                      <block type="EventPlayer" deletable="false" movable="false" editable="false"></block>
                     </value>
                     <value name="VALUE-1">
-                      <block type="CreateVector">
+                      <block type="CreateVector" deletable="false" movable="false" editable="false">
                         <value name="VALUE-0">
-                          <block type="Number">
+                          <block type="Number" deletable="false" movable="false" editable="false">
                             <field name="NUM">-73</field>
                           </block>
                         </value>
                         <value name="VALUE-1">
-                          <block type="Number">
+                          <block type="Number" deletable="false" movable="false" editable="false">
                             <field name="NUM">31</field>
                           </block>
                         </value>
                         <value name="VALUE-2">
-                          <block type="Number">
+                          <block type="Number" deletable="false" movable="false" editable="false">
                             <field name="NUM">327</field>
                           </block>
                         </value>
                       </block>
                     </value>
                     <value name="VALUE-2">
-                      <block type="Number">
+                      <block type="Number" deletable="false" movable="false" editable="false">
                         <field name="NUM">0</field>
                       </block>
                     </value>
                   </block>
                 </statement>
                 <next>
-                  <block type="If">
+                  <block type="If" deletable="false" movable="false" editable="false">
                     <mutation else="1"></mutation>
                     <value name="VALUE-0">
-                      <block type="Equals">
+                      <block type="Equals" deletable="false" movable="false" editable="false">
                         <value name="VALUE-0">
-                          <block type="Modulo">
+                          <block type="Modulo" deletable="false" movable="false" editable="false">
                             <value name="VALUE-0">
-                              <block type="GetMatchTimeElapsed"></block>
+                              <block type="GetMatchTimeElapsed" deletable="false" movable="false" editable="false"></block>
                             </value>
                             <value name="VALUE-1">
-                              <block type="Number">
+                              <block type="Number" deletable="false" movable="false" editable="false">
                                 <field name="NUM">3</field>
                               </block>
                             </value>
                           </block>
                         </value>
                         <value name="VALUE-1">
-                          <block type="Number">
+                          <block type="Number" deletable="false" movable="false" editable="false">
                             <field name="NUM">0</field>
                           </block>
                         </value>
                       </block>
                     </value>
                     <statement name="DO">
-                      <block type="subroutineInstanceBlock">
+                      <block type="subroutineInstanceBlock" deletable="false" movable="false" editable="false">
                         <field name="SUBROUTINE_NAME">debug1</field>
                       </block>
                     </statement>
                     <statement name="ELSE">
-                      <block type="subroutineInstanceBlock">
+                      <block type="subroutineInstanceBlock" deletable="false" movable="false" editable="false">
                         <field name="SUBROUTINE_NAME">debug2</field>
                       </block>
                     </statement>
                     <next>
-                      <block type="Wait">
+                      <block type="Wait" deletable="false" movable="false" editable="false">
                         <value name="VALUE-0">
-                          <block type="Number">
+                          <block type="Number" deletable="false" movable="false" editable="false">
                             <field name="NUM">0.2</field>
                           </block>
                         </value>
