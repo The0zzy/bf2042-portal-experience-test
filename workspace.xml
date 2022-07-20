@@ -611,22 +611,7 @@
           <block type="Message">
             <value name="VALUE-0">
               <block type="Text">
-                <field name="TEXT">Hello!</field>
-              </block>
-            </value>
-            <value name="VALUE-1">
-              <block type="Text">
-                <field name="TEXT">Hello!</field>
-              </block>
-            </value>
-            <value name="VALUE-2">
-              <block type="Text">
-                <field name="TEXT">Hello!</field>
-              </block>
-            </value>
-            <value name="VALUE-3">
-              <block type="Text">
-                <field name="TEXT">Hello!</field>
+                <field name="TEXT">Hello! {}</field>
               </block>
             </value>
           </block>
@@ -639,7 +624,7 @@
         </value>
         <value name="VALUE-2">
           <block type="Number">
-            <field name="NUM">123</field>
+            <field name="NUM">1</field>
           </block>
         </value>
         <value name="VALUE-3">
