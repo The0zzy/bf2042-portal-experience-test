@@ -589,7 +589,66 @@
       </block>
     </statement>
   </block>
-  <block type="ruleBlock" x="1760" y="1436">
+  <block type="subroutineBlock" deletable="false" x="1752" y="400">
+    <field name="SUBROUTINE_NAME">asd</field>
+    <statement name="CONDITIONS">
+      <block type="conditionBlock">
+        <value name="CONDITION">
+          <block type="IsCurrentMap">
+            <value name="VALUE-0">
+              <block type="MapsItem">
+                <field name="VALUE-0">Maps</field>
+                <field name="VALUE-1">Frost</field>
+              </block>
+            </value>
+          </block>
+        </value>
+      </block>
+    </statement>
+    <statement name="ACTIONS">
+      <block type="DisplayCustomNotificationMessage">
+        <value name="VALUE-0">
+          <block type="Message">
+            <value name="VALUE-0">
+              <block type="Text">
+                <field name="TEXT">Hello!</field>
+              </block>
+            </value>
+            <value name="VALUE-1">
+              <block type="Text">
+                <field name="TEXT">Hello!</field>
+              </block>
+            </value>
+            <value name="VALUE-2">
+              <block type="Text">
+                <field name="TEXT">Hello!</field>
+              </block>
+            </value>
+            <value name="VALUE-3">
+              <block type="Text">
+                <field name="TEXT">Hello!</field>
+              </block>
+            </value>
+          </block>
+        </value>
+        <value name="VALUE-1">
+          <block type="CustomMessagesItem">
+            <field name="VALUE-0">CustomMessages</field>
+            <field name="VALUE-1">HeaderText</field>
+          </block>
+        </value>
+        <value name="VALUE-2">
+          <block type="Number">
+            <field name="NUM">123</field>
+          </block>
+        </value>
+        <value name="VALUE-3">
+          <block type="EventPlayer"></block>
+        </value>
+      </block>
+    </statement>
+  </block>
+  <block type="ruleBlock" x="2112" y="1888">
     <mutation isOnGoingEvent="true"></mutation>
     <field name="NAME">New Rule</field>
     <field name="EVENTTYPE">Ongoing</field>
@@ -913,7 +972,7 @@
       </block>
     </statement>
   </block>
-  <block type="ruleBlock" x="-75" y="2069">
+  <block type="ruleBlock" x="9" y="2065">
     <mutation isOnGoingEvent="false"></mutation>
     <field name="NAME">New Rule</field>
     <field name="EVENTTYPE">OnPlayerDied</field>
@@ -997,7 +1056,7 @@
       </block>
     </statement>
   </block>
-  <block type="If" x="0" y="2649">
+  <block type="If" x="203" y="2634">
     <mutation else="1"></mutation>
     <value name="VALUE-0">
       <block type="Not">
