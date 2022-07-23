@@ -42,7 +42,7 @@
                 </value>
                 <value name="VALUE-1">
                   <block type="Number">
-                    <field name="NUM">2</field>
+                    <field name="NUM">12345</field>
                   </block>
                 </value>
               </block>
