@@ -589,7 +589,7 @@
       </block>
     </statement>
   </block>
-  <block type="SetVariableAtIndex" x="231" y="59"></block>
+  <block type="SetVariableAtIndex" x="33" y="16"></block>
   <block type="subroutineBlock" deletable="false" x="1752" y="400">
     <field name="SUBROUTINE_NAME">asd</field>
     <statement name="CONDITIONS">
