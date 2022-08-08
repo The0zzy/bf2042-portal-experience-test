@@ -11,7 +11,251 @@
     <variable type="Global" id="#7zq+R,(tHTMA@wg3!5o">initialized</variable>
     <variable type="Global" id="=7h#O(Lvo~vrw6sd,q[Z">pointA</variable>
   </variables>
-  <block type="ruleBlock" x="493" y="-1">
+  <block type="modBlock" deletable="false" x="-992" y="-17">
+    <statement name="RULES">
+      <block type="ruleBlock">
+        <mutation isOnGoingEvent="true"></mutation>
+        <field name="NAME">New Rule</field>
+        <field name="EVENTTYPE">Ongoing</field>
+        <field name="OBJECTTYPE">Player</field>
+        <statement name="ACTIONS">
+          <block type="SendErrorReport">
+            <value name="VALUE-0">
+              <block type="Message">
+                <value name="VALUE-0">
+                  <block type="Text">
+                    <field name="TEXT">Test Error Report with Numbers</field>
+                  </block>
+                </value>
+              </block>
+            </value>
+            <next>
+              <block type="SendErrorReport">
+                <value name="VALUE-0">
+                  <block type="Message">
+                    <value name="VALUE-0">
+                      <block type="Text">
+                        <field name="TEXT">Numbers: {}</field>
+                      </block>
+                    </value>
+                    <value name="VALUE-1">
+                      <block type="Number">
+                        <field name="NUM">1</field>
+                      </block>
+                    </value>
+                  </block>
+                </value>
+                <next>
+                  <block type="SendErrorReport">
+                    <value name="VALUE-0">
+                      <block type="Message">
+                        <value name="VALUE-0">
+                          <block type="Text">
+                            <field name="TEXT">Numbers: {} {}</field>
+                          </block>
+                        </value>
+                        <value name="VALUE-1">
+                          <block type="Number">
+                            <field name="NUM">1</field>
+                          </block>
+                        </value>
+                        <value name="VALUE-2">
+                          <block type="Number">
+                            <field name="NUM">2</field>
+                          </block>
+                        </value>
+                      </block>
+                    </value>
+                    <next>
+                      <block type="SendErrorReport">
+                        <value name="VALUE-0">
+                          <block type="Message">
+                            <value name="VALUE-0">
+                              <block type="Text">
+                                <field name="TEXT">Numbers: {} {} {}</field>
+                              </block>
+                            </value>
+                            <value name="VALUE-1">
+                              <block type="Number">
+                                <field name="NUM">1</field>
+                              </block>
+                            </value>
+                            <value name="VALUE-2">
+                              <block type="Number">
+                                <field name="NUM">2</field>
+                              </block>
+                            </value>
+                            <value name="VALUE-3">
+                              <block type="Number">
+                                <field name="NUM">3</field>
+                              </block>
+                            </value>
+                          </block>
+                        </value>
+                        <next>
+                          <block type="SendErrorReport">
+                            <value name="VALUE-0">
+                              <block type="Message">
+                                <value name="VALUE-0">
+                                  <block type="Text">
+                                    <field name="TEXT">Test Error Report with Strings</field>
+                                  </block>
+                                </value>
+                              </block>
+                            </value>
+                            <next>
+                              <block type="SendErrorReport">
+                                <value name="VALUE-0">
+                                  <block type="Message">
+                                    <value name="VALUE-0">
+                                      <block type="Text">
+                                        <field name="TEXT">Strings: {}</field>
+                                      </block>
+                                    </value>
+                                    <value name="VALUE-1">
+                                      <block type="Text">
+                                        <field name="TEXT">a</field>
+                                      </block>
+                                    </value>
+                                  </block>
+                                </value>
+                                <next>
+                                  <block type="SendErrorReport">
+                                    <value name="VALUE-0">
+                                      <block type="Message">
+                                        <value name="VALUE-0">
+                                          <block type="Text">
+                                            <field name="TEXT">Strings: {} {}</field>
+                                          </block>
+                                        </value>
+                                        <value name="VALUE-1">
+                                          <block type="Text">
+                                            <field name="TEXT">a</field>
+                                          </block>
+                                        </value>
+                                        <value name="VALUE-2">
+                                          <block type="Text">
+                                            <field name="TEXT">b</field>
+                                          </block>
+                                        </value>
+                                      </block>
+                                    </value>
+                                    <next>
+                                      <block type="SendErrorReport">
+                                        <value name="VALUE-0">
+                                          <block type="Message">
+                                            <value name="VALUE-0">
+                                              <block type="Text">
+                                                <field name="TEXT">Strings: {} {} {}</field>
+                                              </block>
+                                            </value>
+                                            <value name="VALUE-1">
+                                              <block type="Text">
+                                                <field name="TEXT">a</field>
+                                              </block>
+                                            </value>
+                                            <value name="VALUE-2">
+                                              <block type="Text">
+                                                <field name="TEXT">b</field>
+                                              </block>
+                                            </value>
+                                            <value name="VALUE-3">
+                                              <block type="Text">
+                                                <field name="TEXT">c</field>
+                                              </block>
+                                            </value>
+                                          </block>
+                                        </value>
+                                        <next>
+                                          <block type="SendErrorReport">
+                                            <value name="VALUE-0">
+                                              <block type="Message">
+                                                <value name="VALUE-0">
+                                                  <block type="Text">
+                                                    <field name="TEXT">Test Error Report with Players</field>
+                                                  </block>
+                                                </value>
+                                              </block>
+                                            </value>
+                                            <next>
+                                              <block type="SendErrorReport">
+                                                <value name="VALUE-0">
+                                                  <block type="Message">
+                                                    <value name="VALUE-0">
+                                                      <block type="Text">
+                                                        <field name="TEXT">Players: {}</field>
+                                                      </block>
+                                                    </value>
+                                                    <value name="VALUE-1">
+                                                      <block type="EventPlayer"></block>
+                                                    </value>
+                                                  </block>
+                                                </value>
+                                                <next>
+                                                  <block type="SendErrorReport">
+                                                    <value name="VALUE-0">
+                                                      <block type="Message">
+                                                        <value name="VALUE-0">
+                                                          <block type="Text">
+                                                            <field name="TEXT">Players: {} {}</field>
+                                                          </block>
+                                                        </value>
+                                                        <value name="VALUE-1">
+                                                          <block type="EventPlayer"></block>
+                                                        </value>
+                                                        <value name="VALUE-2">
+                                                          <block type="EventPlayer"></block>
+                                                        </value>
+                                                      </block>
+                                                    </value>
+                                                    <next>
+                                                      <block type="SendErrorReport">
+                                                        <value name="VALUE-0">
+                                                          <block type="Message">
+                                                            <value name="VALUE-0">
+                                                              <block type="Text">
+                                                                <field name="TEXT">Players: {} {} {}</field>
+                                                              </block>
+                                                            </value>
+                                                            <value name="VALUE-1">
+                                                              <block type="EventPlayer"></block>
+                                                            </value>
+                                                            <value name="VALUE-2">
+                                                              <block type="EventPlayer"></block>
+                                                            </value>
+                                                            <value name="VALUE-3">
+                                                              <block type="EventPlayer"></block>
+                                                            </value>
+                                                          </block>
+                                                        </value>
+                                                      </block>
+                                                    </next>
+                                                  </block>
+                                                </next>
+                                              </block>
+                                            </next>
+                                          </block>
+                                        </next>
+                                      </block>
+                                    </next>
+                                  </block>
+                                </next>
+                              </block>
+                            </next>
+                          </block>
+                        </next>
+                      </block>
+                    </next>
+                  </block>
+                </next>
+              </block>
+            </next>
+          </block>
+        </statement>
+      </block>
+    </statement>
+  </block>
+  <block type="ruleBlock" x="767" y="3">
     <mutation isOnGoingEvent="false"></mutation>
     <field name="NAME">New Rule</field>
     <field name="EVENTTYPE">OnGameModeStarted</field>
@@ -584,26 +828,6 @@
         </next>
       </block>
     </next>
-  </block>
-  <block type="Text" x="-610" y="155">
-    <field name="TEXT"></field>
-  </block>
-  <block type="modBlock" deletable="false" x="-599" y="163">
-    <statement name="RULES">
-      <block type="ruleBlock">
-        <mutation isOnGoingEvent="true"></mutation>
-        <field name="NAME">New Rule</field>
-        <field name="EVENTTYPE">Ongoing</field>
-        <field name="OBJECTTYPE">Player</field>
-        <statement name="ACTIONS">
-          <block type="SendErrorReport">
-            <value name="VALUE-0">
-              <block type="Message"></block>
-            </value>
-          </block>
-        </statement>
-      </block>
-    </statement>
   </block>
   <block type="subroutineBlock" deletable="false" x="1752" y="400">
     <field name="SUBROUTINE_NAME">asd</field>
