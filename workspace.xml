@@ -399,4 +399,16 @@
       </block>
     </statement>
   </block>
+  <block type="SetVariableAtIndex" x="160" y="1178">
+    <value name="VALUE-1">
+      <block type="Number">
+        <field name="NUM">0</field>
+      </block>
+    </value>
+    <value name="VALUE-2">
+      <block type="Number">
+        <field name="NUM">1</field>
+      </block>
+    </value>
+  </block>
 </xml>
